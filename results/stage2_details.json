@@ -1,0 +1,2530 @@
+{
+  "summary": {
+    "selected_ids": [
+      "C0081",
+      "C0031",
+      "C0079",
+      "C0170",
+      "C0087",
+      "C0397"
+    ],
+    "selected_bitstring_decision_register": "1010100111",
+    "selection_vector_rank_order": "1110010101",
+    "selected_by": "presolved_xy_dicke p=3 (ideal Aer, 8192 shots)",
+    "objective_value": 33.003249,
+    "budget_used": 12.0,
+    "budget_limit": 25.0,
+    "capacity_used": 10.0,
+    "capacity_limit": 22.0,
+    "n_selected": 6,
+    "feasible": true,
+    "classical_optimum_ids": [
+      "C0081",
+      "C0031",
+      "C0079",
+      "C0170",
+      "C0087",
+      "C0397"
+    ],
+    "classical_optimum_objective": 33.003249,
+    "gap_absolute": 0.0,
+    "gap_relative": 0.0,
+    "second_best_objective": 31.868933,
+    "n_feasible_selections": 210,
+    "n_assignments_enumerated": 1024,
+    "random_baselines": {
+      "uniform_bits_p_optimal": 0.0009765625,
+      "uniform_bits_p_feasible": 0.205078125,
+      "uniform_K_subsets_p_optimal": 0.004761904761904762,
+      "uniform_K_subsets_p_feasible": 1.0
+    }
+  },
+  "formulations": {
+    "full_penalty_x": {
+      "n_qubits": 18,
+      "decision_qubits": 10,
+      "slack": {
+        "budget": {
+          "start_qubit": 10,
+          "weights": [
+            1,
+            2,
+            4,
+            8
+          ]
+        },
+        "capacity": {
+          "start_qubit": 14,
+          "weights": [
+            1,
+            2,
+            4,
+            8
+          ]
+        }
+      },
+      "penalty": {
+        "A": 54.7492275,
+        "rule": "A = 1.5 * sum|v_i| (general bound)",
+        "terms": [
+          "cardinality",
+          "budget",
+          "capacity"
+        ],
+        "presolve_bounds": {
+          "max_cost_K": 19.0,
+          "min_cost_K": 10.0,
+          "max_capacity_K": 15.0,
+          "min_capacity_K": 7.0
+        }
+      },
+      "redundant_constraints": {
+        "budget": true,
+        "capacity": true
+      },
+      "mixer": "x",
+      "presolve": false,
+      "cardinality_handling": "penalty",
+      "ground_state_check": {
+        "ground_state_index": 210599,
+        "ground_state_bitstring": "110011011010100111",
+        "ground_energy": -33.003249000015785,
+        "ground_state_is_constrained_optimum": true,
+        "spectral_gap_to_next_distinct_solution": 1.1343160000105854,
+        "n_states_checked": 262144
+      },
+      "ising": {
+        "h": [
+          1536.576997,
+          933.9779030000004,
+          1784.364177750001,
+          1478.7052325000009,
+          1231.7964897499996,
+          631.1799362500005,
+          1779.7601587500008,
+          630.6593642500006,
+          1805.923873499999,
+          1179.1490012499996,
+          301.1207512500005,
+          602.2415025000006,
+          1204.4830050000016,
+          2408.9660100000037,
+          273.74613750000043,
+          547.4922750000009,
+          1094.984550000002,
+          2189.969100000002
+        ],
+        "J_nonzero": {
+          "0,1": 273.74613750000003,
+          "0,2": 437.99381999999997,
+          "0,3": 328.495365,
+          "0,4": 383.24459249999995,
+          "0,5": 164.24768250000002,
+          "0,6": 437.99381999999997,
+          "0,7": 164.24768250000002,
+          "0,8": 520.11766125,
+          "0,9": 218.99691,
+          "0,10": 109.498455,
+          "0,11": 218.99691,
+          "0,12": 437.99382,
+          "0,13": 875.98764,
+          "0,14": 27.37461375,
+          "0,15": 54.7492275,
+          "0,16": 109.498455,
+          "0,17": 218.99691,
+          "1,2": 273.74613750000003,
+          "1,3": 218.99691,
+          "1,4": 218.99691,
+          "1,5": 109.498455,
+          "1,6": 273.74613750000003,
+          "1,7": 109.498455,
+          "1,8": 301.12075125,
+          "1,9": 164.2476825,
+          "1,10": 54.7492275,
+          "1,11": 109.498455,
+          "1,12": 218.99691,
+          "1,13": 437.99382,
+          "1,14": 27.37461375,
+          "1,15": 54.7492275,
+          "1,16": 109.498455,
+          "1,17": 218.99691,
+          "2,3": 437.99382,
+          "2,4": 355.86997875,
+          "2,5": 191.62229625,
+          "2,6": 520.11766125,
+          "2,7": 191.62229625,
+          "2,8": 520.11766125,
+          "2,9": 355.86997875,
+          "2,10": 82.12384125,
+          "2,11": 164.2476825,
+          "2,12": 328.495365,
+          "2,13": 656.99073,
+          "2,14": 82.12384125,
+          "2,15": 164.2476825,
+          "2,16": 328.495365,
+          "2,17": 656.99073,
+          "3,4": 273.74613750000003,
+          "3,5": 164.2476825,
+          "3,6": 437.99382,
+          "3,7": 164.2476825,
+          "3,8": 410.61920625000005,
+          "3,9": 328.495365,
+          "3,10": 54.7492275,
+          "3,11": 109.498455,
+          "3,12": 218.99691,
+          "3,13": 437.99382,
+          "3,14": 82.12384125,
+          "3,15": 164.2476825,
+          "3,16": 328.495365,
+          "3,17": 656.99073,
+          "4,5": 136.87306875000002,
+          "4,6": 355.86997875,
+          "4,7": 136.87306875000002,
+          "4,8": 410.61920625,
+          "4,9": 191.62229625,
+          "4,10": 82.12384125,
+          "4,11": 164.2476825,
+          "4,12": 328.495365,
+          "4,13": 656.99073,
+          "4,14": 27.37461375,
+          "4,15": 54.7492275,
+          "4,16": 109.498455,
+          "4,17": 218.99691,
+          "5,6": 191.62229625,
+          "5,7": 82.12384125,
+          "5,8": 191.62229625000003,
+          "5,9": 136.87306875000002,
+          "5,10": 27.37461375,
+          "5,11": 54.7492275,
+          "5,12": 109.498455,
+          "5,13": 218.99691,
+          "5,14": 27.37461375,
+          "5,15": 54.7492275,
+          "5,16": 109.498455,
+          "5,17": 218.99691,
+          "6,7": 191.62229625,
+          "6,8": 520.11766125,
+          "6,9": 355.86997875,
+          "6,10": 82.12384125,
+          "6,11": 164.2476825,
+          "6,12": 328.495365,
+          "6,13": 656.99073,
+          "6,14": 82.12384125,
+          "6,15": 164.2476825,
+          "6,16": 328.495365,
+          "6,17": 656.99073,
+          "7,8": 191.62229625000003,
+          "7,9": 136.87306875000002,
+          "7,10": 27.37461375,
+          "7,11": 54.7492275,
+          "7,12": 109.498455,
+          "7,13": 218.99691,
+          "7,14": 27.37461375,
+          "7,15": 54.7492275,
+          "7,16": 109.498455,
+          "7,17": 218.99691,
+          "8,9": 301.12075125,
+          "8,10": 109.498455,
+          "8,11": 218.99691,
+          "8,12": 437.99382,
+          "8,13": 875.98764,
+          "8,14": 54.7492275,
+          "8,15": 109.498455,
+          "8,16": 218.99691,
+          "8,17": 437.99382,
+          "9,10": 27.37461375,
+          "9,11": 54.7492275,
+          "9,12": 109.498455,
+          "9,13": 218.99691,
+          "9,14": 82.12384125,
+          "9,15": 164.2476825,
+          "9,16": 328.495365,
+          "9,17": 656.99073,
+          "10,11": 54.7492275,
+          "10,12": 109.498455,
+          "10,13": 218.99691,
+          "11,12": 218.99691,
+          "11,13": 437.99382,
+          "12,13": 875.98764,
+          "14,15": 54.7492275,
+          "14,16": 109.498455,
+          "14,17": 218.99691,
+          "15,16": 218.99691,
+          "15,17": 437.99382,
+          "16,17": 875.98764
+        },
+        "offset": 7100.873358500009
+      },
+      "qubo": {
+        "linear": [
+          -13037.513399,
+          -8218.866196,
+          -15066.066130500001,
+          -12593.274505000001,
+          -10675.9771045,
+          -5642.298072500001,
+          -15056.8580925,
+          -5641.256928500001,
+          -15273.433204500001,
+          -10023.1898525,
+          -2682.7121475000004,
+          -5255.92584,
+          -10073.85786,
+          -18395.74044,
+          -2354.2167825,
+          -4598.93511,
+          -8759.876400000001,
+          -15767.777520000001
+        ],
+        "quadratic_nonzero": {
+          "0,1": 1094.9845500000001,
+          "0,2": 1751.9752799999999,
+          "0,3": 1313.98146,
+          "0,4": 1532.9783699999998,
+          "0,5": 656.9907300000001,
+          "0,6": 1751.9752799999999,
+          "0,7": 656.9907300000001,
+          "0,8": 2080.470645,
+          "0,9": 875.98764,
+          "0,10": 437.99382,
+          "0,11": 875.98764,
+          "0,12": 1751.97528,
+          "0,13": 3503.95056,
+          "0,14": 109.498455,
+          "0,15": 218.99691,
+          "0,16": 437.99382,
+          "0,17": 875.98764,
+          "1,2": 1094.9845500000001,
+          "1,3": 875.98764,
+          "1,4": 875.98764,
+          "1,5": 437.99382,
+          "1,6": 1094.9845500000001,
+          "1,7": 437.99382,
+          "1,8": 1204.483005,
+          "1,9": 656.99073,
+          "1,10": 218.99691,
+          "1,11": 437.99382,
+          "1,12": 875.98764,
+          "1,13": 1751.97528,
+          "1,14": 109.498455,
+          "1,15": 218.99691,
+          "1,16": 437.99382,
+          "1,17": 875.98764,
+          "2,3": 1751.97528,
+          "2,4": 1423.479915,
+          "2,5": 766.489185,
+          "2,6": 2080.470645,
+          "2,7": 766.489185,
+          "2,8": 2080.470645,
+          "2,9": 1423.479915,
+          "2,10": 328.495365,
+          "2,11": 656.99073,
+          "2,12": 1313.98146,
+          "2,13": 2627.96292,
+          "2,14": 328.495365,
+          "2,15": 656.99073,
+          "2,16": 1313.98146,
+          "2,17": 2627.96292,
+          "3,4": 1094.9845500000001,
+          "3,5": 656.99073,
+          "3,6": 1751.97528,
+          "3,7": 656.99073,
+          "3,8": 1642.4768250000002,
+          "3,9": 1313.98146,
+          "3,10": 218.99691,
+          "3,11": 437.99382,
+          "3,12": 875.98764,
+          "3,13": 1751.97528,
+          "3,14": 328.495365,
+          "3,15": 656.99073,
+          "3,16": 1313.98146,
+          "3,17": 2627.96292,
+          "4,5": 547.4922750000001,
+          "4,6": 1423.479915,
+          "4,7": 547.4922750000001,
+          "4,8": 1642.476825,
+          "4,9": 766.489185,
+          "4,10": 328.495365,
+          "4,11": 656.99073,
+          "4,12": 1313.98146,
+          "4,13": 2627.96292,
+          "4,14": 109.498455,
+          "4,15": 218.99691,
+          "4,16": 437.99382,
+          "4,17": 875.98764,
+          "5,6": 766.489185,
+          "5,7": 328.495365,
+          "5,8": 766.4891850000001,
+          "5,9": 547.4922750000001,
+          "5,10": 109.498455,
+          "5,11": 218.99691,
+          "5,12": 437.99382,
+          "5,13": 875.98764,
+          "5,14": 109.498455,
+          "5,15": 218.99691,
+          "5,16": 437.99382,
+          "5,17": 875.98764,
+          "6,7": 766.489185,
+          "6,8": 2080.470645,
+          "6,9": 1423.479915,
+          "6,10": 328.495365,
+          "6,11": 656.99073,
+          "6,12": 1313.98146,
+          "6,13": 2627.96292,
+          "6,14": 328.495365,
+          "6,15": 656.99073,
+          "6,16": 1313.98146,
+          "6,17": 2627.96292,
+          "7,8": 766.4891850000001,
+          "7,9": 547.4922750000001,
+          "7,10": 109.498455,
+          "7,11": 218.99691,
+          "7,12": 437.99382,
+          "7,13": 875.98764,
+          "7,14": 109.498455,
+          "7,15": 218.99691,
+          "7,16": 437.99382,
+          "7,17": 875.98764,
+          "8,9": 1204.483005,
+          "8,10": 437.99382,
+          "8,11": 875.98764,
+          "8,12": 1751.97528,
+          "8,13": 3503.95056,
+          "8,14": 218.99691,
+          "8,15": 437.99382,
+          "8,16": 875.98764,
+          "8,17": 1751.97528,
+          "9,10": 109.498455,
+          "9,11": 218.99691,
+          "9,12": 437.99382,
+          "9,13": 875.98764,
+          "9,14": 328.495365,
+          "9,15": 656.99073,
+          "9,16": 1313.98146,
+          "9,17": 2627.96292,
+          "10,11": 218.99691,
+          "10,12": 437.99382,
+          "10,13": 875.98764,
+          "11,12": 875.98764,
+          "11,13": 1751.97528,
+          "12,13": 3503.95056,
+          "14,15": 218.99691,
+          "14,16": 437.99382,
+          "14,17": 875.98764,
+          "15,16": 875.98764,
+          "15,17": 1751.97528,
+          "16,17": 3503.95056
+        },
+        "constant": 62687.86548750001
+      }
+    },
+    "presolved_penalty_x": {
+      "n_qubits": 10,
+      "decision_qubits": 10,
+      "slack": {},
+      "penalty": {
+        "A": 15.042852,
+        "rule": "A = 1.5 * max|v_i| (cardinality-only bound)",
+        "terms": [
+          "cardinality"
+        ],
+        "presolve_bounds": {
+          "max_cost_K": 19.0,
+          "min_cost_K": 10.0,
+          "max_capacity_K": 15.0,
+          "min_capacity_K": 7.0
+        }
+      },
+      "redundant_constraints": {
+        "budget": true,
+        "capacity": true
+      },
+      "mixer": "x",
+      "presolve": true,
+      "cardinality_handling": "penalty",
+      "ground_state_check": {
+        "ground_state_index": 679,
+        "ground_state_bitstring": "1010100111",
+        "ground_energy": -33.003248999999926,
+        "ground_state_is_constrained_optimum": true,
+        "spectral_gap_to_next_distinct_solution": 1.1343159999998988,
+        "n_states_checked": 1024
+      },
+      "ising": {
+        "h": [
+          18.641478999999997,
+          18.2838875,
+          20.057136,
+          15.518942000000001,
+          14.981723000000008,
+          16.60667200000001,
+          15.453116999999997,
+          16.08610000000001,
+          14.242218,
+          17.083462000000004
+        ],
+        "J_nonzero": {
+          "0,1": 7.521426,
+          "0,2": 7.521426,
+          "0,3": 7.521426,
+          "0,4": 7.521426,
+          "0,5": 7.521426,
+          "0,6": 7.521426,
+          "0,7": 7.521426,
+          "0,8": 7.521426,
+          "0,9": 7.521426,
+          "1,2": 7.521426,
+          "1,3": 7.521426,
+          "1,4": 7.521426,
+          "1,5": 7.521426,
+          "1,6": 7.521426,
+          "1,7": 7.521426,
+          "1,8": 7.521426,
+          "1,9": 7.521426,
+          "2,3": 7.521426,
+          "2,4": 7.521426,
+          "2,5": 7.521426,
+          "2,6": 7.521426,
+          "2,7": 7.521426,
+          "2,8": 7.521426,
+          "2,9": 7.521426,
+          "3,4": 7.521426,
+          "3,5": 7.521426,
+          "3,6": 7.521426,
+          "3,7": 7.521426,
+          "3,8": 7.521426,
+          "3,9": 7.521426,
+          "4,5": 7.521426,
+          "4,6": 7.521426,
+          "4,7": 7.521426,
+          "4,8": 7.521426,
+          "4,9": 7.521426,
+          "5,6": 7.521426,
+          "5,7": 7.521426,
+          "5,8": 7.521426,
+          "5,9": 7.521426,
+          "6,7": 7.521426,
+          "6,8": 7.521426,
+          "6,9": 7.521426,
+          "7,8": 7.521426,
+          "7,9": 7.521426,
+          "8,9": 7.521426
+        },
+        "offset": 36.12376550000001
+      },
+      "qubo": {
+        "linear": [
+          -172.668626,
+          -171.953443,
+          -175.49994,
+          -166.423552,
+          -165.34911400000001,
+          -168.59901200000002,
+          -166.291902,
+          -167.557868,
+          -163.870104,
+          -169.552592
+        ],
+        "quadratic_nonzero": {
+          "0,1": 30.085704,
+          "0,2": 30.085704,
+          "0,3": 30.085704,
+          "0,4": 30.085704,
+          "0,5": 30.085704,
+          "0,6": 30.085704,
+          "0,7": 30.085704,
+          "0,8": 30.085704,
+          "0,9": 30.085704,
+          "1,2": 30.085704,
+          "1,3": 30.085704,
+          "1,4": 30.085704,
+          "1,5": 30.085704,
+          "1,6": 30.085704,
+          "1,7": 30.085704,
+          "1,8": 30.085704,
+          "1,9": 30.085704,
+          "2,3": 30.085704,
+          "2,4": 30.085704,
+          "2,5": 30.085704,
+          "2,6": 30.085704,
+          "2,7": 30.085704,
+          "2,8": 30.085704,
+          "2,9": 30.085704,
+          "3,4": 30.085704,
+          "3,5": 30.085704,
+          "3,6": 30.085704,
+          "3,7": 30.085704,
+          "3,8": 30.085704,
+          "3,9": 30.085704,
+          "4,5": 30.085704,
+          "4,6": 30.085704,
+          "4,7": 30.085704,
+          "4,8": 30.085704,
+          "4,9": 30.085704,
+          "5,6": 30.085704,
+          "5,7": 30.085704,
+          "5,8": 30.085704,
+          "5,9": 30.085704,
+          "6,7": 30.085704,
+          "6,8": 30.085704,
+          "6,9": 30.085704,
+          "7,8": 30.085704,
+          "7,9": 30.085704,
+          "8,9": 30.085704
+        },
+        "constant": 541.542672
+      }
+    },
+    "presolved_xy_dicke": {
+      "n_qubits": 10,
+      "decision_qubits": 10,
+      "slack": {},
+      "penalty": {
+        "A": 0.0,
+        "rule": "no penalty terms: cardinality enforced exactly by the Dicke state + XY mixer",
+        "terms": [],
+        "presolve_bounds": {
+          "max_cost_K": 19.0,
+          "min_cost_K": 10.0,
+          "max_capacity_K": 15.0,
+          "min_capacity_K": 7.0
+        }
+      },
+      "redundant_constraints": {
+        "budget": true,
+        "capacity": true
+      },
+      "mixer": "xy",
+      "presolve": true,
+      "cardinality_handling": "XY mixer + Dicke state (exact)",
+      "ground_state_check": {
+        "subspace": "Hamming weight 6 on decision qubits (210 selections x slack)",
+        "ground_state_bitstring": "1010100111",
+        "ground_state_is_constrained_optimum": true
+      },
+      "ising": {
+        "h": [
+          3.5986269999999996,
+          3.2410354999999997,
+          5.014284,
+          0.4760900000000001,
+          -0.06112899999999999,
+          1.5638200000000002,
+          0.4102650000000001,
+          1.0432480000000002,
+          -0.8006340000000001,
+          2.04061
+        ],
+        "J_nonzero": {},
+        "offset": -16.5262165
+      },
+      "qubo": {
+        "linear": [
+          -7.197253999999999,
+          -6.4820709999999995,
+          -10.028568,
+          -0.9521800000000002,
+          0.12225799999999998,
+          -3.1276400000000004,
+          -0.8205300000000002,
+          -2.0864960000000004,
+          1.6012680000000001,
+          -4.08122
+        ],
+        "quadratic_nonzero": {},
+        "constant": 0.0
+      }
+    }
+  },
+  "optimisation": {
+    "full_penalty_x": {
+      "1": {
+        "gammas": [
+          -0.6325167711563995
+        ],
+        "betas": [
+          0.2676169079413571
+        ],
+        "cvar": 0.10433723919120268,
+        "expected_energy": 0.8332564081063474,
+        "restart_values": [
+          0.10433723919120268,
+          0.31546679940130123,
+          0.31546682377446683
+        ],
+        "n_function_evals": 149,
+        "quality_exact": {
+          "p_optimal": 0.001049512933216829,
+          "p_feasible": 0.31375437728548256,
+          "mean_objective_given_feasible": 19.846538303711164,
+          "approx_ratio_given_feasible": 0.60135104588373
+        },
+        "energy_scale": 2408.9660100000037
+      },
+      "2": {
+        "gammas": [
+          -0.44577919283357537,
+          -1.7869413759567636
+        ],
+        "betas": [
+          0.47779589015649726,
+          0.2019720141612339
+        ],
+        "cvar": 0.06701167980876624,
+        "expected_energy": 0.666014792639144,
+        "restart_values": [
+          0.06701167980876624,
+          0.06944777649360956,
+          0.0734421349220453
+        ],
+        "n_function_evals": 835,
+        "quality_exact": {
+          "p_optimal": 0.0010160016121393554,
+          "p_feasible": 0.301733202939682,
+          "mean_objective_given_feasible": 19.849941005354697,
+          "approx_ratio_given_feasible": 0.6014541479038836
+        },
+        "energy_scale": 2408.9660100000037
+      }
+    },
+    "presolved_penalty_x": {
+      "1": {
+        "gammas": [
+          -0.5291435800874708
+        ],
+        "betas": [
+          0.20124045412558564
+        ],
+        "cvar": -1.282734951799779,
+        "expected_energy": 0.3196365327485674,
+        "restart_values": [
+          -1.2827346491338896,
+          -0.9850936157178342,
+          -1.0749233786400827,
+          -1.2827346508179336,
+          -1.0749234095379951,
+          -1.282734951799779,
+          -1.2536892426278727,
+          -1.2536893708999497
+        ],
+        "n_function_evals": 1075,
+        "quality_exact": {
+          "p_optimal": 0.0034034419309282604,
+          "p_feasible": 0.643807402550949,
+          "mean_objective_given_feasible": 20.0733316104142,
+          "approx_ratio_given_feasible": 0.608222893764617
+        },
+        "energy_scale": 20.057136
+      },
+      "2": {
+        "gammas": [
+          -0.32281537939164434,
+          -1.4932437922583983
+        ],
+        "betas": [
+          0.2459363995216795,
+          0.0873557191654442
+        ],
+        "cvar": -1.3338740931091515,
+        "expected_energy": -0.6413145521583647,
+        "restart_values": [
+          -1.3338740931091515,
+          -1.3333104708813113,
+          -1.1553948013285587,
+          -1.257511905482261,
+          -1.2519855637956996,
+          -1.2650784069363197,
+          -0.9573786575061862,
+          -1.0621909026426408
+        ],
+        "n_function_evals": 3261,
+        "quality_exact": {
+          "p_optimal": 0.004755473444623156,
+          "p_feasible": 0.7976567327348087,
+          "mean_objective_given_feasible": 20.342457906402192,
+          "approx_ratio_given_feasible": 0.6163774332158084
+        },
+        "energy_scale": 20.057136
+      },
+      "3": {
+        "gammas": [
+          -0.4194159069644725,
+          -1.2894352333165724,
+          -0.7106403419708069
+        ],
+        "betas": [
+          0.263739929504098,
+          0.3749850658879425,
+          0.3003612305709684
+        ],
+        "cvar": -1.433565652620667,
+        "expected_energy": 0.6072696860528142,
+        "restart_values": [
+          -1.433565652620667,
+          -1.3510303235552938,
+          -1.2487159969258763,
+          -1.4254855173625818,
+          -1.2525081961364672,
+          -1.406754019869408,
+          -1.3565130254993627,
+          -1.3374388977236165
+        ],
+        "n_function_evals": 3833,
+        "quality_exact": {
+          "p_optimal": 0.01348616425697166,
+          "p_feasible": 0.649316963441093,
+          "mean_objective_given_feasible": 23.29816464184878,
+          "approx_ratio_given_feasible": 0.7059354865894804
+        },
+        "energy_scale": 20.057136
+      }
+    },
+    "presolved_xy_dicke": {
+      "1": {
+        "gammas": [
+          -1.2048227057950058
+        ],
+        "betas": [
+          0.6056081516554753
+        ],
+        "cvar": -6.068318583573381,
+        "expected_energy": -4.922624764869996,
+        "restart_values": [
+          -6.068318583573381,
+          -6.068318579095338,
+          -6.0683185835452935,
+          -6.0683185797128845,
+          -6.068318580687657,
+          -6.0683185820710746,
+          -6.068318559801769,
+          -6.068318580082193
+        ],
+        "n_function_evals": 347,
+        "quality_exact": {
+          "p_optimal": 0.05957680110574773,
+          "p_feasible": 0.9999999999999997,
+          "mean_objective_given_feasible": 24.68343859649139,
+          "approx_ratio_given_feasible": 0.7479093526971053
+        },
+        "energy_scale": 5.014284
+      },
+      "2": {
+        "gammas": [
+          0.821015092610987,
+          1.7189744612920406
+        ],
+        "betas": [
+          -0.7882923935382526,
+          2.7009609897259814
+        ],
+        "cvar": -6.322960228392294,
+        "expected_energy": -4.977318331678258,
+        "restart_values": [
+          -6.322960076238336,
+          -6.3051665524953195,
+          -6.322960193306306,
+          -6.305166534822594,
+          -6.30516645675105,
+          -6.322960219764538,
+          -5.906399575793555,
+          -6.322960228392294
+        ],
+        "n_function_evals": 1187,
+        "quality_exact": {
+          "p_optimal": 0.11326023569443355,
+          "p_feasible": 0.9999999999999992,
+          "mean_objective_given_feasible": 24.957687673440997,
+          "approx_ratio_given_feasible": 0.7562191126528482
+        },
+        "energy_scale": 5.014284
+      },
+      "3": {
+        "gammas": [
+          -0.7402833093734528,
+          -1.5036421632029706,
+          0.3561325748847521
+        ],
+        "betas": [
+          0.786076332064225,
+          0.7534149554907373,
+          -0.5142643934035872
+        ],
+        "cvar": -6.488790984629901,
+        "expected_energy": -5.097838880891658,
+        "restart_values": [
+          -6.375265106160129,
+          -6.488790984629901,
+          -6.205476757876419,
+          -6.199300843807345,
+          -6.306811974224388,
+          -6.443858112598916,
+          -6.205476754515936,
+          -6.443858132161972
+        ],
+        "n_function_evals": 3524,
+        "quality_exact": {
+          "p_optimal": 0.15682541914002823,
+          "p_feasible": 1.0000000000000009,
+          "mean_objective_given_feasible": 25.562011935032928,
+          "approx_ratio_given_feasible": 0.7745301662582653
+        },
+        "energy_scale": 5.014284
+      }
+    }
+  },
+  "optimiser": {
+    "method": "COBYLA",
+    "objective": "CVaR_0.25 of normalised energy",
+    "restarts": {
+      "full_penalty_x": 3,
+      "presolved_penalty_x": 8,
+      "presolved_xy_dicke": 8
+    },
+    "depths": {
+      "full_penalty_x": [
+        1,
+        2
+      ],
+      "presolved_penalty_x": [
+        1,
+        2,
+        3
+      ],
+      "presolved_xy_dicke": [
+        1,
+        2,
+        3
+      ]
+    },
+    "init": "INTERP from depth p-1, linear ramp, uniform random",
+    "seed": 42
+  },
+  "runs": [
+    {
+      "variant": "full_penalty_x",
+      "p": 1,
+      "mode": "ideal_shots",
+      "shots": 8192,
+      "p_optimal_sampled": 0.0008544921875,
+      "p_feasible_sampled": 0.3128662109375,
+      "distinct_bitstrings": 7820,
+      "best_feasible_selection": "1110010101",
+      "best_feasible_bitstring": "001111111010100111",
+      "best_feasible_objective": 33.003249,
+      "best_feasible_count": 1,
+      "most_frequent_feasible_selection": "1000101111",
+      "most_frequent_feasible_objective": 12.461974
+    },
+    {
+      "variant": "full_penalty_x",
+      "p": 2,
+      "mode": "ideal_shots",
+      "shots": 8192,
+      "p_optimal_sampled": 0.0010986328125,
+      "p_feasible_sampled": 0.3035888671875,
+      "distinct_bitstrings": 7467,
+      "best_feasible_selection": "1110010101",
+      "best_feasible_bitstring": "111110101010100111",
+      "best_feasible_objective": 33.003249,
+      "best_feasible_count": 1,
+      "most_frequent_feasible_selection": "1111000011",
+      "most_frequent_feasible_objective": 27.140024999999994
+    },
+    {
+      "variant": "presolved_penalty_x",
+      "p": 1,
+      "mode": "ideal_shots",
+      "shots": 8192,
+      "p_optimal_sampled": 0.003173828125,
+      "p_feasible_sampled": 0.643798828125,
+      "distinct_bitstrings": 934,
+      "best_feasible_selection": "1110010101",
+      "best_feasible_bitstring": "1010100111",
+      "best_feasible_objective": 33.003249,
+      "best_feasible_count": 26,
+      "most_frequent_feasible_selection": "1100101110",
+      "most_frequent_feasible_objective": 14.862824999999997
+    },
+    {
+      "variant": "presolved_penalty_x",
+      "p": 2,
+      "mode": "ideal_shots",
+      "shots": 8192,
+      "p_optimal_sampled": 0.0040283203125,
+      "p_feasible_sampled": 0.791015625,
+      "distinct_bitstrings": 665,
+      "best_feasible_selection": "1110010101",
+      "best_feasible_bitstring": "1010100111",
+      "best_feasible_objective": 33.003249,
+      "best_feasible_count": 33,
+      "most_frequent_feasible_selection": "1111100001",
+      "most_frequent_feasible_objective": 28.619034999999997
+    },
+    {
+      "variant": "presolved_penalty_x",
+      "p": 3,
+      "mode": "ideal_shots",
+      "shots": 8192,
+      "p_optimal_sampled": 0.0108642578125,
+      "p_feasible_sampled": 0.64208984375,
+      "distinct_bitstrings": 809,
+      "best_feasible_selection": "1110010101",
+      "best_feasible_bitstring": "1010100111",
+      "best_feasible_objective": 33.003249,
+      "best_feasible_count": 89,
+      "most_frequent_feasible_selection": "1111010001",
+      "most_frequent_feasible_objective": 31.868933
+    },
+    {
+      "variant": "presolved_xy_dicke",
+      "p": 1,
+      "mode": "ideal_shots",
+      "shots": 8192,
+      "p_optimal_sampled": 0.0594482421875,
+      "p_feasible_sampled": 1.0,
+      "distinct_bitstrings": 195,
+      "best_feasible_selection": "1110010101",
+      "best_feasible_bitstring": "1010100111",
+      "best_feasible_objective": 33.003249,
+      "best_feasible_count": 487,
+      "most_frequent_feasible_selection": "1110010101",
+      "most_frequent_feasible_objective": 33.003249
+    },
+    {
+      "variant": "presolved_xy_dicke",
+      "p": 2,
+      "mode": "ideal_shots",
+      "shots": 8192,
+      "p_optimal_sampled": 0.111328125,
+      "p_feasible_sampled": 1.0,
+      "distinct_bitstrings": 195,
+      "best_feasible_selection": "1110010101",
+      "best_feasible_bitstring": "1010100111",
+      "best_feasible_objective": 33.003249,
+      "best_feasible_count": 912,
+      "most_frequent_feasible_selection": "1110010101",
+      "most_frequent_feasible_objective": 33.003249
+    },
+    {
+      "variant": "presolved_xy_dicke",
+      "p": 3,
+      "mode": "ideal_shots",
+      "shots": 8192,
+      "p_optimal_sampled": 0.155517578125,
+      "p_feasible_sampled": 1.0,
+      "distinct_bitstrings": 197,
+      "best_feasible_selection": "1110010101",
+      "best_feasible_bitstring": "1010100111",
+      "best_feasible_objective": 33.003249,
+      "best_feasible_count": 1274,
+      "most_frequent_feasible_selection": "1110010101",
+      "most_frequent_feasible_objective": 33.003249
+    },
+    {
+      "variant": "presolved_penalty_x",
+      "p": 1,
+      "mode": "noisy_FakeTorino",
+      "shots": 8192,
+      "p_optimal_sampled": 0.002197265625,
+      "p_feasible_sampled": 0.42626953125,
+      "distinct_bitstrings": 1001,
+      "best_feasible_selection": "1110010101",
+      "best_feasible_bitstring": "1010100111",
+      "best_feasible_objective": 33.003249,
+      "best_feasible_count": 18,
+      "most_frequent_feasible_selection": "1010101110",
+      "most_frequent_feasible_objective": 18.409322000000003
+    },
+    {
+      "variant": "presolved_penalty_x",
+      "p": 1,
+      "mode": "noisy_FakeTorino_readout_mitigated",
+      "p_optimal_sampled": 0.002554455715373876,
+      "p_feasible_sampled": 0.4845556849478173
+    },
+    {
+      "variant": "presolved_penalty_x",
+      "p": 2,
+      "mode": "noisy_FakeTorino",
+      "shots": 8192,
+      "p_optimal_sampled": 0.00341796875,
+      "p_feasible_sampled": 0.4091796875,
+      "distinct_bitstrings": 1005,
+      "best_feasible_selection": "1110010101",
+      "best_feasible_bitstring": "1010100111",
+      "best_feasible_objective": 33.003249,
+      "best_feasible_count": 28,
+      "most_frequent_feasible_selection": "1110010101",
+      "most_frequent_feasible_objective": 33.003249
+    },
+    {
+      "variant": "presolved_penalty_x",
+      "p": 2,
+      "mode": "noisy_FakeTorino_readout_mitigated",
+      "p_optimal_sampled": 0.0041333581585613075,
+      "p_feasible_sampled": 0.4661295264637877
+    },
+    {
+      "variant": "presolved_penalty_x",
+      "p": 3,
+      "mode": "noisy_FakeTorino",
+      "shots": 8192,
+      "p_optimal_sampled": 0.0042724609375,
+      "p_feasible_sampled": 0.3092041015625,
+      "distinct_bitstrings": 1016,
+      "best_feasible_selection": "1110010101",
+      "best_feasible_bitstring": "1010100111",
+      "best_feasible_objective": 33.003249,
+      "best_feasible_count": 35,
+      "most_frequent_feasible_selection": "1110010101",
+      "most_frequent_feasible_objective": 33.003249
+    },
+    {
+      "variant": "presolved_penalty_x",
+      "p": 3,
+      "mode": "noisy_FakeTorino_readout_mitigated",
+      "p_optimal_sampled": 0.005093303494492511,
+      "p_feasible_sampled": 0.34100537450532664
+    },
+    {
+      "variant": "presolved_xy_dicke",
+      "p": 1,
+      "mode": "noisy_FakeTorino",
+      "shots": 8192,
+      "p_optimal_sampled": 0.0047607421875,
+      "p_feasible_sampled": 0.2474365234375,
+      "distinct_bitstrings": 1013,
+      "best_feasible_selection": "1110010101",
+      "best_feasible_bitstring": "1010100111",
+      "best_feasible_objective": 33.003249,
+      "best_feasible_count": 39,
+      "most_frequent_feasible_selection": "1010010111",
+      "most_frequent_feasible_objective": 24.91991
+    },
+    {
+      "variant": "presolved_xy_dicke",
+      "p": 1,
+      "mode": "noisy_FakeTorino_readout_mitigated",
+      "p_optimal_sampled": 0.00545483351481463,
+      "p_feasible_sampled": 0.2593087865256155
+    },
+    {
+      "variant": "presolved_xy_dicke",
+      "p": 2,
+      "mode": "noisy_FakeTorino",
+      "shots": 8192,
+      "p_optimal_sampled": 0.0074462890625,
+      "p_feasible_sampled": 0.252685546875,
+      "distinct_bitstrings": 1020,
+      "best_feasible_selection": "1110010101",
+      "best_feasible_bitstring": "1010100111",
+      "best_feasible_objective": 33.003249,
+      "best_feasible_count": 61,
+      "most_frequent_feasible_selection": "1110010101",
+      "most_frequent_feasible_objective": 33.003249
+    },
+    {
+      "variant": "presolved_xy_dicke",
+      "p": 2,
+      "mode": "noisy_FakeTorino_readout_mitigated",
+      "p_optimal_sampled": 0.00918059160529116,
+      "p_feasible_sampled": 0.2688901396960901
+    },
+    {
+      "variant": "presolved_xy_dicke",
+      "p": 3,
+      "mode": "noisy_FakeTorino",
+      "shots": 8192,
+      "p_optimal_sampled": 0.0096435546875,
+      "p_feasible_sampled": 0.240966796875,
+      "distinct_bitstrings": 1022,
+      "best_feasible_selection": "1110010101",
+      "best_feasible_bitstring": "1010100111",
+      "best_feasible_objective": 33.003249,
+      "best_feasible_count": 79,
+      "most_frequent_feasible_selection": "1110010101",
+      "most_frequent_feasible_objective": 33.003249
+    },
+    {
+      "variant": "presolved_xy_dicke",
+      "p": 3,
+      "mode": "noisy_FakeTorino_readout_mitigated",
+      "p_optimal_sampled": 0.011316718366157743,
+      "p_feasible_sampled": 0.24906356836110682
+    },
+    {
+      "variant": "presolved_penalty_x",
+      "p": 1,
+      "mode": "noisy_FakeBrisbane",
+      "shots": 8192,
+      "p_optimal_sampled": 0.002197265625,
+      "p_feasible_sampled": 0.39111328125,
+      "distinct_bitstrings": 1008,
+      "best_feasible_selection": "1110010101",
+      "best_feasible_bitstring": "1010100111",
+      "best_feasible_objective": 33.003249,
+      "best_feasible_count": 18,
+      "most_frequent_feasible_selection": "0101011101",
+      "most_frequent_feasible_objective": 17.550137
+    },
+    {
+      "variant": "presolved_penalty_x",
+      "p": 1,
+      "mode": "noisy_FakeBrisbane_readout_mitigated",
+      "p_optimal_sampled": 0.0023371636200453204,
+      "p_feasible_sampled": 0.41840232032292973
+    },
+    {
+      "variant": "presolved_penalty_x",
+      "p": 2,
+      "mode": "noisy_FakeBrisbane",
+      "shots": 8192,
+      "p_optimal_sampled": 0.00146484375,
+      "p_feasible_sampled": 0.3402099609375,
+      "distinct_bitstrings": 1015,
+      "best_feasible_selection": "1110010101",
+      "best_feasible_bitstring": "1010100111",
+      "best_feasible_objective": 33.003249,
+      "best_feasible_count": 12,
+      "most_frequent_feasible_selection": "1110010011",
+      "most_frequent_feasible_objective": 29.315484999999995
+    },
+    {
+      "variant": "presolved_penalty_x",
+      "p": 2,
+      "mode": "noisy_FakeBrisbane_readout_mitigated",
+      "p_optimal_sampled": 0.0015288777695864498,
+      "p_feasible_sampled": 0.36669913031453205
+    },
+    {
+      "variant": "presolved_penalty_x",
+      "p": 3,
+      "mode": "noisy_FakeBrisbane",
+      "shots": 8192,
+      "p_optimal_sampled": 0.00146484375,
+      "p_feasible_sampled": 0.2593994140625,
+      "distinct_bitstrings": 1023,
+      "best_feasible_selection": "1110010101",
+      "best_feasible_bitstring": "1010100111",
+      "best_feasible_objective": 33.003249,
+      "best_feasible_count": 12,
+      "most_frequent_feasible_selection": "1010010111",
+      "most_frequent_feasible_objective": 24.91991
+    },
+    {
+      "variant": "presolved_penalty_x",
+      "p": 3,
+      "mode": "noisy_FakeBrisbane_readout_mitigated",
+      "p_optimal_sampled": 0.0014905840419414459,
+      "p_feasible_sampled": 0.26578120331631255
+    },
+    {
+      "variant": "presolved_xy_dicke",
+      "p": 1,
+      "mode": "noisy_FakeBrisbane",
+      "shots": 8192,
+      "p_optimal_sampled": 0.0032958984375,
+      "p_feasible_sampled": 0.2149658203125,
+      "distinct_bitstrings": 1022,
+      "best_feasible_selection": "1110010101",
+      "best_feasible_bitstring": "1010100111",
+      "best_feasible_objective": 33.003249,
+      "best_feasible_count": 27,
+      "most_frequent_feasible_selection": "1010011101",
+      "most_frequent_feasible_objective": 27.341708000000004
+    },
+    {
+      "variant": "presolved_xy_dicke",
+      "p": 1,
+      "mode": "noisy_FakeBrisbane_readout_mitigated",
+      "p_optimal_sampled": 0.0041595946299840736,
+      "p_feasible_sampled": 0.22332643556044934
+    },
+    {
+      "variant": "presolved_xy_dicke",
+      "p": 2,
+      "mode": "noisy_FakeBrisbane",
+      "shots": 8192,
+      "p_optimal_sampled": 0.003662109375,
+      "p_feasible_sampled": 0.22412109375,
+      "distinct_bitstrings": 1023,
+      "best_feasible_selection": "1110010101",
+      "best_feasible_bitstring": "1010100111",
+      "best_feasible_objective": 33.003249,
+      "best_feasible_count": 30,
+      "most_frequent_feasible_selection": "1110010101",
+      "most_frequent_feasible_objective": 33.003249
+    },
+    {
+      "variant": "presolved_xy_dicke",
+      "p": 2,
+      "mode": "noisy_FakeBrisbane_readout_mitigated",
+      "p_optimal_sampled": 0.004690921195576131,
+      "p_feasible_sampled": 0.23089888377663204
+    },
+    {
+      "variant": "presolved_xy_dicke",
+      "p": 3,
+      "mode": "noisy_FakeBrisbane",
+      "shots": 8192,
+      "p_optimal_sampled": 0.0028076171875,
+      "p_feasible_sampled": 0.1986083984375,
+      "distinct_bitstrings": 1024,
+      "best_feasible_selection": "1110010101",
+      "best_feasible_bitstring": "1010100111",
+      "best_feasible_objective": 33.003249,
+      "best_feasible_count": 23,
+      "most_frequent_feasible_selection": "1110010101",
+      "most_frequent_feasible_objective": 33.003249
+    },
+    {
+      "variant": "presolved_xy_dicke",
+      "p": 3,
+      "mode": "noisy_FakeBrisbane_readout_mitigated",
+      "p_optimal_sampled": 0.002959519587322232,
+      "p_feasible_sampled": 0.1983633397423295
+    }
+  ],
+  "hardware": {
+    "full_penalty_x|p=2|FakeTorino": {
+      "transpile": {
+        "backend": "fake_torino",
+        "optimization_level": 3,
+        "seed_transpiler": 42,
+        "logical_qubits": 18,
+        "physical_qubits_used": 18,
+        "physical_layout": [
+          72,
+          59,
+          60,
+          43,
+          42,
+          54,
+          61,
+          73,
+          62,
+          55,
+          67,
+          74,
+          69,
+          68,
+          66,
+          63,
+          65,
+          64
+        ],
+        "original_depth": 52,
+        "original_ops": {
+          "rzz": 274,
+          "rz": 36,
+          "rx": 36,
+          "h": 18
+        },
+        "original_gate_counts": {
+          "one_qubit": 90,
+          "two_qubit": 274,
+          "multi_qubit": 0
+        },
+        "transpiled_depth": 1191,
+        "transpiled_two_qubit_depth": 411,
+        "transpiled_ops": {
+          "sx": 2228,
+          "rz": 1234,
+          "cz": 1200,
+          "x": 22,
+          "measure": 18,
+          "barrier": 1
+        },
+        "transpiled_gate_counts": {
+          "one_qubit": 3484,
+          "two_qubit": 1200,
+          "multi_qubit": 0
+        },
+        "swap_count_after_routing": 276
+      },
+      "note": "noisy execution skipped (19 qubits; depth too large to be informative)"
+    },
+    "presolved_penalty_x|p=1|FakeTorino": {
+      "transpile": {
+        "backend": "fake_torino",
+        "optimization_level": 3,
+        "seed_transpiler": 42,
+        "logical_qubits": 10,
+        "physical_qubits_used": 10,
+        "physical_layout": [
+          103,
+          120,
+          111,
+          102,
+          98,
+          101,
+          100,
+          80,
+          99,
+          92
+        ],
+        "original_depth": 20,
+        "original_ops": {
+          "rzz": 45,
+          "h": 10,
+          "rz": 10,
+          "rx": 10
+        },
+        "original_gate_counts": {
+          "one_qubit": 30,
+          "two_qubit": 45,
+          "multi_qubit": 0
+        },
+        "transpiled_depth": 317,
+        "transpiled_two_qubit_depth": 106,
+        "transpiled_ops": {
+          "sx": 342,
+          "rz": 204,
+          "cz": 181,
+          "measure": 10,
+          "x": 3,
+          "barrier": 1
+        },
+        "transpiled_gate_counts": {
+          "one_qubit": 549,
+          "two_qubit": 181,
+          "multi_qubit": 0
+        },
+        "swap_count_after_routing": 39
+      },
+      "noisy_unmitigated": {
+        "shots": 8192,
+        "p_optimal_sampled": 0.002197265625,
+        "p_feasible_sampled": 0.42626953125,
+        "distinct_bitstrings": 1001,
+        "best_feasible_selection": "1110010101",
+        "best_feasible_bitstring": "1010100111",
+        "best_feasible_objective": 33.003249,
+        "best_feasible_count": 18,
+        "most_frequent_feasible_selection": "1010101110",
+        "most_frequent_feasible_objective": 18.409322000000003
+      },
+      "noisy_readout_mitigated": {
+        "p_optimal": 0.002554455715373876,
+        "p_feasible": 0.4845556849478173,
+        "mean_objective_given_feasible": 20.083451537873806,
+        "approx_ratio_given_feasible": 0.6085295280435513
+      }
+    },
+    "presolved_penalty_x|p=2|FakeTorino": {
+      "transpile": {
+        "backend": "fake_torino",
+        "optimization_level": 3,
+        "seed_transpiler": 42,
+        "logical_qubits": 10,
+        "physical_qubits_used": 10,
+        "physical_layout": [
+          119,
+          120,
+          102,
+          111,
+          101,
+          98,
+          99,
+          100,
+          80,
+          92
+        ],
+        "original_depth": 32,
+        "original_ops": {
+          "rzz": 90,
+          "rz": 20,
+          "rx": 20,
+          "h": 10
+        },
+        "original_gate_counts": {
+          "one_qubit": 50,
+          "two_qubit": 90,
+          "multi_qubit": 0
+        },
+        "transpiled_depth": 513,
+        "transpiled_two_qubit_depth": 175,
+        "transpiled_ops": {
+          "sx": 654,
+          "rz": 397,
+          "cz": 358,
+          "measure": 10,
+          "x": 8,
+          "barrier": 1
+        },
+        "transpiled_gate_counts": {
+          "one_qubit": 1059,
+          "two_qubit": 358,
+          "multi_qubit": 0
+        },
+        "swap_count_after_routing": 72
+      },
+      "noisy_unmitigated": {
+        "shots": 8192,
+        "p_optimal_sampled": 0.00341796875,
+        "p_feasible_sampled": 0.4091796875,
+        "distinct_bitstrings": 1005,
+        "best_feasible_selection": "1110010101",
+        "best_feasible_bitstring": "1010100111",
+        "best_feasible_objective": 33.003249,
+        "best_feasible_count": 28,
+        "most_frequent_feasible_selection": "1110010101",
+        "most_frequent_feasible_objective": 33.003249
+      },
+      "noisy_readout_mitigated": {
+        "p_optimal": 0.0041333581585613075,
+        "p_feasible": 0.4661295264637877,
+        "mean_objective_given_feasible": 20.216942630839416,
+        "approx_ratio_given_feasible": 0.6125743144512656
+      }
+    },
+    "presolved_penalty_x|p=3|FakeTorino": {
+      "transpile": {
+        "backend": "fake_torino",
+        "optimization_level": 3,
+        "seed_transpiler": 42,
+        "logical_qubits": 10,
+        "physical_qubits_used": 10,
+        "physical_layout": [
+          51,
+          52,
+          37,
+          33,
+          32,
+          31,
+          11,
+          13,
+          18,
+          12
+        ],
+        "original_depth": 44,
+        "original_ops": {
+          "rzz": 135,
+          "rz": 30,
+          "rx": 30,
+          "h": 10
+        },
+        "original_gate_counts": {
+          "one_qubit": 70,
+          "two_qubit": 135,
+          "multi_qubit": 0
+        },
+        "transpiled_depth": 575,
+        "transpiled_two_qubit_depth": 192,
+        "transpiled_ops": {
+          "sx": 900,
+          "rz": 615,
+          "cz": 453,
+          "x": 14,
+          "measure": 10,
+          "barrier": 1
+        },
+        "transpiled_gate_counts": {
+          "one_qubit": 1529,
+          "two_qubit": 453,
+          "multi_qubit": 0
+        },
+        "swap_count_after_routing": 115
+      },
+      "noisy_unmitigated": {
+        "shots": 8192,
+        "p_optimal_sampled": 0.0042724609375,
+        "p_feasible_sampled": 0.3092041015625,
+        "distinct_bitstrings": 1016,
+        "best_feasible_selection": "1110010101",
+        "best_feasible_bitstring": "1010100111",
+        "best_feasible_objective": 33.003249,
+        "best_feasible_count": 35,
+        "most_frequent_feasible_selection": "1110010101",
+        "most_frequent_feasible_objective": 33.003249
+      },
+      "noisy_readout_mitigated": {
+        "p_optimal": 0.005093303494492511,
+        "p_feasible": 0.34100537450532664,
+        "mean_objective_given_feasible": 21.86294870947733,
+        "approx_ratio_given_feasible": 0.6624483762031227
+      }
+    },
+    "presolved_xy_dicke|p=1|FakeTorino": {
+      "transpile": {
+        "backend": "fake_torino",
+        "optimization_level": 3,
+        "seed_transpiler": 42,
+        "logical_qubits": 10,
+        "physical_qubits_used": 12,
+        "physical_layout": [
+          30,
+          32,
+          33,
+          37,
+          52,
+          51,
+          50,
+          49,
+          48,
+          29
+        ],
+        "original_depth": 69,
+        "original_ops": {
+          "cx": 78,
+          "rz": 10,
+          "xx_plus_yy": 10,
+          "cry": 9,
+          "x": 6,
+          "cccircuit-91313": 1,
+          "cccircuit-91320": 1,
+          "cccircuit-91327": 1,
+          "cccircuit-91349": 1,
+          "cccircuit-91334": 1,
+          "cccircuit-91356": 1,
+          "cccircuit-91341": 1,
+          "cccircuit-91363": 1,
+          "cccircuit-91385": 1,
+          "cccircuit-91370": 1,
+          "cccircuit-91392": 1,
+          "cccircuit-91377": 1,
+          "cccircuit-91399": 1,
+          "cccircuit-91421": 1,
+          "cccircuit-91406": 1,
+          "cccircuit-91428": 1,
+          "cccircuit-91413": 1,
+          "cccircuit-91435": 1,
+          "cccircuit-91457": 1,
+          "cccircuit-91442": 1,
+          "cccircuit-91464": 1,
+          "cccircuit-91449": 1,
+          "cccircuit-91471": 1,
+          "cccircuit-91486": 1,
+          "cccircuit-91478": 1,
+          "cccircuit-91493": 1,
+          "cccircuit-91500": 1,
+          "cccircuit-91508": 1,
+          "cccircuit-91515": 1,
+          "cccircuit-91523": 1
+        },
+        "original_gate_counts": {
+          "one_qubit": 16,
+          "two_qubit": 97,
+          "multi_qubit": 30
+        },
+        "transpiled_depth": 1215,
+        "transpiled_two_qubit_depth": 427,
+        "transpiled_ops": {
+          "sx": 1184,
+          "rz": 805,
+          "cz": 592,
+          "x": 87,
+          "measure": 10,
+          "barrier": 1
+        },
+        "transpiled_gate_counts": {
+          "one_qubit": 2076,
+          "two_qubit": 592,
+          "multi_qubit": 0
+        },
+        "swap_count_after_routing": 108
+      },
+      "noisy_unmitigated": {
+        "shots": 8192,
+        "p_optimal_sampled": 0.0047607421875,
+        "p_feasible_sampled": 0.2474365234375,
+        "distinct_bitstrings": 1013,
+        "best_feasible_selection": "1110010101",
+        "best_feasible_bitstring": "1010100111",
+        "best_feasible_objective": 33.003249,
+        "best_feasible_count": 39,
+        "most_frequent_feasible_selection": "1010010111",
+        "most_frequent_feasible_objective": 24.91991
+      },
+      "noisy_readout_mitigated": {
+        "p_optimal": 0.00545483351481463,
+        "p_feasible": 0.2593087865256155,
+        "mean_objective_given_feasible": 22.291495641416223,
+        "approx_ratio_given_feasible": 0.6754333684364295
+      }
+    },
+    "presolved_xy_dicke|p=2|FakeTorino": {
+      "transpile": {
+        "backend": "fake_torino",
+        "optimization_level": 3,
+        "seed_transpiler": 42,
+        "logical_qubits": 10,
+        "physical_qubits_used": 10,
+        "physical_layout": [
+          101,
+          99,
+          98,
+          80,
+          92,
+          100,
+          121,
+          119,
+          120,
+          111
+        ],
+        "original_depth": 72,
+        "original_ops": {
+          "cx": 78,
+          "rz": 20,
+          "xx_plus_yy": 20,
+          "cry": 9,
+          "x": 6,
+          "cccircuit-121728": 1,
+          "cccircuit-121735": 1,
+          "cccircuit-121742": 1,
+          "cccircuit-121764": 1,
+          "cccircuit-121749": 1,
+          "cccircuit-121771": 1,
+          "cccircuit-121756": 1,
+          "cccircuit-121778": 1,
+          "cccircuit-121800": 1,
+          "cccircuit-121785": 1,
+          "cccircuit-121807": 1,
+          "cccircuit-121792": 1,
+          "cccircuit-121814": 1,
+          "cccircuit-121836": 1,
+          "cccircuit-121821": 1,
+          "cccircuit-121843": 1,
+          "cccircuit-121828": 1,
+          "cccircuit-121850": 1,
+          "cccircuit-121872": 1,
+          "cccircuit-121857": 1,
+          "cccircuit-121879": 1,
+          "cccircuit-121864": 1,
+          "cccircuit-121886": 1,
+          "cccircuit-121901": 1,
+          "cccircuit-121893": 1,
+          "cccircuit-121908": 1,
+          "cccircuit-121915": 1,
+          "cccircuit-121923": 1,
+          "cccircuit-121930": 1,
+          "cccircuit-121938": 1
+        },
+        "original_gate_counts": {
+          "one_qubit": 26,
+          "two_qubit": 107,
+          "multi_qubit": 30
+        },
+        "transpiled_depth": 1261,
+        "transpiled_two_qubit_depth": 433,
+        "transpiled_ops": {
+          "sx": 1262,
+          "rz": 871,
+          "cz": 620,
+          "x": 104,
+          "measure": 10,
+          "barrier": 1
+        },
+        "transpiled_gate_counts": {
+          "one_qubit": 2237,
+          "two_qubit": 620,
+          "multi_qubit": 0
+        },
+        "swap_count_after_routing": 111
+      },
+      "noisy_unmitigated": {
+        "shots": 8192,
+        "p_optimal_sampled": 0.0074462890625,
+        "p_feasible_sampled": 0.252685546875,
+        "distinct_bitstrings": 1020,
+        "best_feasible_selection": "1110010101",
+        "best_feasible_bitstring": "1010100111",
+        "best_feasible_objective": 33.003249,
+        "best_feasible_count": 61,
+        "most_frequent_feasible_selection": "1110010101",
+        "most_frequent_feasible_objective": 33.003249
+      },
+      "noisy_readout_mitigated": {
+        "p_optimal": 0.00918059160529116,
+        "p_feasible": 0.2688901396960901,
+        "mean_objective_given_feasible": 22.51360685894153,
+        "approx_ratio_given_feasible": 0.6821633487945847
+      }
+    },
+    "presolved_xy_dicke|p=3|FakeTorino": {
+      "transpile": {
+        "backend": "fake_torino",
+        "optimization_level": 3,
+        "seed_transpiler": 42,
+        "logical_qubits": 10,
+        "physical_qubits_used": 12,
+        "physical_layout": [
+          29,
+          48,
+          49,
+          51,
+          52,
+          37,
+          33,
+          32,
+          31,
+          30
+        ],
+        "original_depth": 75,
+        "original_ops": {
+          "cx": 78,
+          "rz": 30,
+          "xx_plus_yy": 30,
+          "cry": 9,
+          "x": 6,
+          "cccircuit-152143": 1,
+          "cccircuit-152150": 1,
+          "cccircuit-152157": 1,
+          "cccircuit-152179": 1,
+          "cccircuit-152164": 1,
+          "cccircuit-152186": 1,
+          "cccircuit-152171": 1,
+          "cccircuit-152193": 1,
+          "cccircuit-152215": 1,
+          "cccircuit-152200": 1,
+          "cccircuit-152222": 1,
+          "cccircuit-152207": 1,
+          "cccircuit-152229": 1,
+          "cccircuit-152251": 1,
+          "cccircuit-152236": 1,
+          "cccircuit-152258": 1,
+          "cccircuit-152243": 1,
+          "cccircuit-152265": 1,
+          "cccircuit-152287": 1,
+          "cccircuit-152272": 1,
+          "cccircuit-152294": 1,
+          "cccircuit-152279": 1,
+          "cccircuit-152301": 1,
+          "cccircuit-152316": 1,
+          "cccircuit-152308": 1,
+          "cccircuit-152323": 1,
+          "cccircuit-152330": 1,
+          "cccircuit-152338": 1,
+          "cccircuit-152345": 1,
+          "cccircuit-152353": 1
+        },
+        "original_gate_counts": {
+          "one_qubit": 36,
+          "two_qubit": 117,
+          "multi_qubit": 30
+        },
+        "transpiled_depth": 1298,
+        "transpiled_two_qubit_depth": 453,
+        "transpiled_ops": {
+          "sx": 1369,
+          "rz": 948,
+          "cz": 656,
+          "x": 98,
+          "measure": 10,
+          "barrier": 1
+        },
+        "transpiled_gate_counts": {
+          "one_qubit": 2415,
+          "two_qubit": 656,
+          "multi_qubit": 0
+        },
+        "swap_count_after_routing": 116
+      },
+      "noisy_unmitigated": {
+        "shots": 8192,
+        "p_optimal_sampled": 0.0096435546875,
+        "p_feasible_sampled": 0.240966796875,
+        "distinct_bitstrings": 1022,
+        "best_feasible_selection": "1110010101",
+        "best_feasible_bitstring": "1010100111",
+        "best_feasible_objective": 33.003249,
+        "best_feasible_count": 79,
+        "most_frequent_feasible_selection": "1110010101",
+        "most_frequent_feasible_objective": 33.003249
+      },
+      "noisy_readout_mitigated": {
+        "p_optimal": 0.011316718366157743,
+        "p_feasible": 0.24906356836110682,
+        "mean_objective_given_feasible": 22.22006785397592,
+        "approx_ratio_given_feasible": 0.6732691031109065
+      }
+    },
+    "full_penalty_x|p=2|FakeBrisbane": {
+      "transpile": {
+        "backend": "fake_brisbane",
+        "optimization_level": 3,
+        "seed_transpiler": 42,
+        "logical_qubits": 18,
+        "physical_qubits_used": 18,
+        "physical_layout": [
+          106,
+          107,
+          108,
+          112,
+          126,
+          125,
+          124,
+          123,
+          111,
+          122,
+          84,
+          101,
+          83,
+          92,
+          104,
+          105,
+          102,
+          103
+        ],
+        "original_depth": 52,
+        "original_ops": {
+          "rzz": 274,
+          "rz": 36,
+          "rx": 36,
+          "h": 18
+        },
+        "original_gate_counts": {
+          "one_qubit": 90,
+          "two_qubit": 274,
+          "multi_qubit": 0
+        },
+        "transpiled_depth": 1401,
+        "transpiled_two_qubit_depth": 311,
+        "transpiled_ops": {
+          "rz": 3938,
+          "sx": 2803,
+          "ecr": 1096,
+          "x": 136,
+          "measure": 18,
+          "barrier": 1
+        },
+        "transpiled_gate_counts": {
+          "one_qubit": 6877,
+          "two_qubit": 1096,
+          "multi_qubit": 0
+        },
+        "swap_count_after_routing": 270
+      },
+      "note": "noisy execution skipped (19 qubits; depth too large to be informative)"
+    },
+    "presolved_penalty_x|p=1|FakeBrisbane": {
+      "transpile": {
+        "backend": "fake_brisbane",
+        "optimization_level": 3,
+        "seed_transpiler": 42,
+        "logical_qubits": 10,
+        "physical_qubits_used": 10,
+        "physical_layout": [
+          85,
+          73,
+          66,
+          54,
+          65,
+          64,
+          61,
+          72,
+          63,
+          62
+        ],
+        "original_depth": 20,
+        "original_ops": {
+          "rzz": 45,
+          "h": 10,
+          "rz": 10,
+          "rx": 10
+        },
+        "original_gate_counts": {
+          "one_qubit": 30,
+          "two_qubit": 45,
+          "multi_qubit": 0
+        },
+        "transpiled_depth": 493,
+        "transpiled_two_qubit_depth": 110,
+        "transpiled_ops": {
+          "rz": 625,
+          "sx": 415,
+          "ecr": 180,
+          "x": 25,
+          "measure": 10,
+          "barrier": 1
+        },
+        "transpiled_gate_counts": {
+          "one_qubit": 1065,
+          "two_qubit": 180,
+          "multi_qubit": 0
+        },
+        "swap_count_after_routing": 34
+      },
+      "noisy_unmitigated": {
+        "shots": 8192,
+        "p_optimal_sampled": 0.002197265625,
+        "p_feasible_sampled": 0.39111328125,
+        "distinct_bitstrings": 1008,
+        "best_feasible_selection": "1110010101",
+        "best_feasible_bitstring": "1010100111",
+        "best_feasible_objective": 33.003249,
+        "best_feasible_count": 18,
+        "most_frequent_feasible_selection": "0101011101",
+        "most_frequent_feasible_objective": 17.550137
+      },
+      "noisy_readout_mitigated": {
+        "p_optimal": 0.0023371636200453204,
+        "p_feasible": 0.41840232032292973,
+        "mean_objective_given_feasible": 20.071329543581808,
+        "approx_ratio_given_feasible": 0.6081622310452468
+      }
+    },
+    "presolved_penalty_x|p=2|FakeBrisbane": {
+      "transpile": {
+        "backend": "fake_brisbane",
+        "optimization_level": 3,
+        "seed_transpiler": 42,
+        "logical_qubits": 10,
+        "physical_qubits_used": 10,
+        "physical_layout": [
+          64,
+          61,
+          63,
+          62,
+          80,
+          81,
+          72,
+          84,
+          82,
+          83
+        ],
+        "original_depth": 32,
+        "original_ops": {
+          "rzz": 90,
+          "rz": 20,
+          "rx": 20,
+          "h": 10
+        },
+        "original_gate_counts": {
+          "one_qubit": 50,
+          "two_qubit": 90,
+          "multi_qubit": 0
+        },
+        "transpiled_depth": 819,
+        "transpiled_two_qubit_depth": 185,
+        "transpiled_ops": {
+          "rz": 1213,
+          "sx": 817,
+          "ecr": 362,
+          "x": 65,
+          "measure": 10,
+          "barrier": 1
+        },
+        "transpiled_gate_counts": {
+          "one_qubit": 2095,
+          "two_qubit": 362,
+          "multi_qubit": 0
+        },
+        "swap_count_after_routing": 74
+      },
+      "noisy_unmitigated": {
+        "shots": 8192,
+        "p_optimal_sampled": 0.00146484375,
+        "p_feasible_sampled": 0.3402099609375,
+        "distinct_bitstrings": 1015,
+        "best_feasible_selection": "1110010101",
+        "best_feasible_bitstring": "1010100111",
+        "best_feasible_objective": 33.003249,
+        "best_feasible_count": 12,
+        "most_frequent_feasible_selection": "1110010011",
+        "most_frequent_feasible_objective": 29.315484999999995
+      },
+      "noisy_readout_mitigated": {
+        "p_optimal": 0.0015288777695864498,
+        "p_feasible": 0.36669913031453205,
+        "mean_objective_given_feasible": 20.218591389186106,
+        "approx_ratio_given_feasible": 0.6126242719068692
+      }
+    },
+    "presolved_penalty_x|p=3|FakeBrisbane": {
+      "transpile": {
+        "backend": "fake_brisbane",
+        "optimization_level": 3,
+        "seed_transpiler": 42,
+        "logical_qubits": 10,
+        "physical_qubits_used": 10,
+        "physical_layout": [
+          65,
+          64,
+          63,
+          62,
+          72,
+          81,
+          92,
+          82,
+          84,
+          83
+        ],
+        "original_depth": 44,
+        "original_ops": {
+          "rzz": 135,
+          "rz": 30,
+          "rx": 30,
+          "h": 10
+        },
+        "original_gate_counts": {
+          "one_qubit": 70,
+          "two_qubit": 135,
+          "multi_qubit": 0
+        },
+        "transpiled_depth": 915,
+        "transpiled_two_qubit_depth": 175,
+        "transpiled_ops": {
+          "rz": 1785,
+          "sx": 1330,
+          "ecr": 436,
+          "x": 12,
+          "measure": 10,
+          "barrier": 1
+        },
+        "transpiled_gate_counts": {
+          "one_qubit": 3127,
+          "two_qubit": 436,
+          "multi_qubit": 0
+        },
+        "swap_count_after_routing": 114
+      },
+      "noisy_unmitigated": {
+        "shots": 8192,
+        "p_optimal_sampled": 0.00146484375,
+        "p_feasible_sampled": 0.2593994140625,
+        "distinct_bitstrings": 1023,
+        "best_feasible_selection": "1110010101",
+        "best_feasible_bitstring": "1010100111",
+        "best_feasible_objective": 33.003249,
+        "best_feasible_count": 12,
+        "most_frequent_feasible_selection": "1010010111",
+        "most_frequent_feasible_objective": 24.91991
+      },
+      "noisy_readout_mitigated": {
+        "p_optimal": 0.0014905840419414459,
+        "p_feasible": 0.26578120331631255,
+        "mean_objective_given_feasible": 20.823155808702513,
+        "approx_ratio_given_feasible": 0.6309426023087156
+      }
+    },
+    "presolved_xy_dicke|p=1|FakeBrisbane": {
+      "transpile": {
+        "backend": "fake_brisbane",
+        "optimization_level": 3,
+        "seed_transpiler": 42,
+        "logical_qubits": 10,
+        "physical_qubits_used": 10,
+        "physical_layout": [
+          31,
+          13,
+          11,
+          12,
+          17,
+          29,
+          28,
+          30,
+          36,
+          32
+        ],
+        "original_depth": 69,
+        "original_ops": {
+          "cx": 78,
+          "rz": 10,
+          "xx_plus_yy": 10,
+          "cry": 9,
+          "x": 6,
+          "cccircuit-240590": 1,
+          "cccircuit-240597": 1,
+          "cccircuit-240604": 1,
+          "cccircuit-240626": 1,
+          "cccircuit-240611": 1,
+          "cccircuit-240633": 1,
+          "cccircuit-240618": 1,
+          "cccircuit-240640": 1,
+          "cccircuit-240662": 1,
+          "cccircuit-240647": 1,
+          "cccircuit-240669": 1,
+          "cccircuit-240654": 1,
+          "cccircuit-240676": 1,
+          "cccircuit-240698": 1,
+          "cccircuit-240683": 1,
+          "cccircuit-240705": 1,
+          "cccircuit-240690": 1,
+          "cccircuit-240712": 1,
+          "cccircuit-240734": 1,
+          "cccircuit-240719": 1,
+          "cccircuit-240741": 1,
+          "cccircuit-240726": 1,
+          "cccircuit-240748": 1,
+          "cccircuit-240763": 1,
+          "cccircuit-240755": 1,
+          "cccircuit-240770": 1,
+          "cccircuit-240777": 1,
+          "cccircuit-240785": 1,
+          "cccircuit-240792": 1,
+          "cccircuit-240800": 1
+        },
+        "original_gate_counts": {
+          "one_qubit": 16,
+          "two_qubit": 97,
+          "multi_qubit": 30
+        },
+        "transpiled_depth": 1990,
+        "transpiled_two_qubit_depth": 414,
+        "transpiled_ops": {
+          "rz": 2073,
+          "sx": 1405,
+          "ecr": 557,
+          "x": 38,
+          "measure": 10,
+          "barrier": 1
+        },
+        "transpiled_gate_counts": {
+          "one_qubit": 3516,
+          "two_qubit": 557,
+          "multi_qubit": 0
+        },
+        "swap_count_after_routing": 99
+      },
+      "noisy_unmitigated": {
+        "shots": 8192,
+        "p_optimal_sampled": 0.0032958984375,
+        "p_feasible_sampled": 0.2149658203125,
+        "distinct_bitstrings": 1022,
+        "best_feasible_selection": "1110010101",
+        "best_feasible_bitstring": "1010100111",
+        "best_feasible_objective": 33.003249,
+        "best_feasible_count": 27,
+        "most_frequent_feasible_selection": "1010011101",
+        "most_frequent_feasible_objective": 27.341708000000004
+      },
+      "noisy_readout_mitigated": {
+        "p_optimal": 0.0041595946299840736,
+        "p_feasible": 0.22332643556044934,
+        "mean_objective_given_feasible": 21.69701438819454,
+        "approx_ratio_given_feasible": 0.6574205584484891
+      }
+    },
+    "presolved_xy_dicke|p=2|FakeBrisbane": {
+      "transpile": {
+        "backend": "fake_brisbane",
+        "optimization_level": 3,
+        "seed_transpiler": 42,
+        "logical_qubits": 10,
+        "physical_qubits_used": 12,
+        "physical_layout": [
+          28,
+          29,
+          30,
+          12,
+          11,
+          10,
+          9,
+          8,
+          16,
+          27
+        ],
+        "original_depth": 72,
+        "original_ops": {
+          "cx": 78,
+          "rz": 20,
+          "xx_plus_yy": 20,
+          "cry": 9,
+          "x": 6,
+          "cccircuit-260153": 1,
+          "cccircuit-260160": 1,
+          "cccircuit-260167": 1,
+          "cccircuit-260189": 1,
+          "cccircuit-260174": 1,
+          "cccircuit-260196": 1,
+          "cccircuit-260181": 1,
+          "cccircuit-260203": 1,
+          "cccircuit-260225": 1,
+          "cccircuit-260210": 1,
+          "cccircuit-260232": 1,
+          "cccircuit-260217": 1,
+          "cccircuit-260239": 1,
+          "cccircuit-260261": 1,
+          "cccircuit-260246": 1,
+          "cccircuit-260268": 1,
+          "cccircuit-260253": 1,
+          "cccircuit-260275": 1,
+          "cccircuit-260297": 1,
+          "cccircuit-260282": 1,
+          "cccircuit-260304": 1,
+          "cccircuit-260289": 1,
+          "cccircuit-260311": 1,
+          "cccircuit-260326": 1,
+          "cccircuit-260318": 1,
+          "cccircuit-260333": 1,
+          "cccircuit-260340": 1,
+          "cccircuit-260348": 1,
+          "cccircuit-260355": 1,
+          "cccircuit-260363": 1
+        },
+        "original_gate_counts": {
+          "one_qubit": 26,
+          "two_qubit": 107,
+          "multi_qubit": 30
+        },
+        "transpiled_depth": 1904,
+        "transpiled_two_qubit_depth": 438,
+        "transpiled_ops": {
+          "rz": 2144,
+          "sx": 1489,
+          "ecr": 624,
+          "x": 75,
+          "measure": 10,
+          "barrier": 1
+        },
+        "transpiled_gate_counts": {
+          "one_qubit": 3708,
+          "two_qubit": 624,
+          "multi_qubit": 0
+        },
+        "swap_count_after_routing": 112
+      },
+      "noisy_unmitigated": {
+        "shots": 8192,
+        "p_optimal_sampled": 0.003662109375,
+        "p_feasible_sampled": 0.22412109375,
+        "distinct_bitstrings": 1023,
+        "best_feasible_selection": "1110010101",
+        "best_feasible_bitstring": "1010100111",
+        "best_feasible_objective": 33.003249,
+        "best_feasible_count": 30,
+        "most_frequent_feasible_selection": "1110010101",
+        "most_frequent_feasible_objective": 33.003249
+      },
+      "noisy_readout_mitigated": {
+        "p_optimal": 0.004690921195576131,
+        "p_feasible": 0.23089888377663204,
+        "mean_objective_given_feasible": 21.270665101443726,
+        "approx_ratio_given_feasible": 0.6445021549679466
+      }
+    },
+    "presolved_xy_dicke|p=3|FakeBrisbane": {
+      "transpile": {
+        "backend": "fake_brisbane",
+        "optimization_level": 3,
+        "seed_transpiler": 42,
+        "logical_qubits": 10,
+        "physical_qubits_used": 10,
+        "physical_layout": [
+          103,
+          92,
+          83,
+          82,
+          84,
+          101,
+          102,
+          104,
+          105,
+          111
+        ],
+        "original_depth": 75,
+        "original_ops": {
+          "cx": 78,
+          "rz": 30,
+          "xx_plus_yy": 30,
+          "cry": 9,
+          "x": 6,
+          "cccircuit-279716": 1,
+          "cccircuit-279723": 1,
+          "cccircuit-279730": 1,
+          "cccircuit-279752": 1,
+          "cccircuit-279737": 1,
+          "cccircuit-279759": 1,
+          "cccircuit-279744": 1,
+          "cccircuit-279766": 1,
+          "cccircuit-279788": 1,
+          "cccircuit-279773": 1,
+          "cccircuit-279795": 1,
+          "cccircuit-279780": 1,
+          "cccircuit-279802": 1,
+          "cccircuit-279824": 1,
+          "cccircuit-279809": 1,
+          "cccircuit-279831": 1,
+          "cccircuit-279816": 1,
+          "cccircuit-279838": 1,
+          "cccircuit-279860": 1,
+          "cccircuit-279845": 1,
+          "cccircuit-279867": 1,
+          "cccircuit-279852": 1,
+          "cccircuit-279874": 1,
+          "cccircuit-279889": 1,
+          "cccircuit-279881": 1,
+          "cccircuit-279896": 1,
+          "cccircuit-279903": 1,
+          "cccircuit-279911": 1,
+          "cccircuit-279918": 1,
+          "cccircuit-279926": 1
+        },
+        "original_gate_counts": {
+          "one_qubit": 36,
+          "two_qubit": 117,
+          "multi_qubit": 30
+        },
+        "transpiled_depth": 2230,
+        "transpiled_two_qubit_depth": 467,
+        "transpiled_ops": {
+          "rz": 2455,
+          "sx": 1673,
+          "ecr": 660,
+          "x": 49,
+          "measure": 10,
+          "barrier": 1
+        },
+        "transpiled_gate_counts": {
+          "one_qubit": 4177,
+          "two_qubit": 660,
+          "multi_qubit": 0
+        },
+        "swap_count_after_routing": 118
+      },
+      "noisy_unmitigated": {
+        "shots": 8192,
+        "p_optimal_sampled": 0.0028076171875,
+        "p_feasible_sampled": 0.1986083984375,
+        "distinct_bitstrings": 1024,
+        "best_feasible_selection": "1110010101",
+        "best_feasible_bitstring": "1010100111",
+        "best_feasible_objective": 33.003249,
+        "best_feasible_count": 23,
+        "most_frequent_feasible_selection": "1110010101",
+        "most_frequent_feasible_objective": 33.003249
+      },
+      "noisy_readout_mitigated": {
+        "p_optimal": 0.002959519587322232,
+        "p_feasible": 0.1983633397423295,
+        "mean_objective_given_feasible": 21.046425714656586,
+        "approx_ratio_given_feasible": 0.6377076909808664
+      }
+    }
+  },
+  "top_feasible_solutions": [
+    {
+      "ids": [
+        "C0081",
+        "C0031",
+        "C0079",
+        "C0170",
+        "C0087",
+        "C0397"
+      ],
+      "objective": 33.003249,
+      "cost": 12.0,
+      "capacity": 10.0
+    },
+    {
+      "ids": [
+        "C0081",
+        "C0031",
+        "C0079",
+        "C0183",
+        "C0170",
+        "C0397"
+      ],
+      "objective": 31.868933,
+      "cost": 13.0,
+      "capacity": 12.0
+    },
+    {
+      "ids": [
+        "C0081",
+        "C0031",
+        "C0079",
+        "C0170",
+        "C0318",
+        "C0397"
+      ],
+      "objective": 31.737282999999998,
+      "cost": 14.0,
+      "capacity": 12.0
+    },
+    {
+      "ids": [
+        "C0081",
+        "C0031",
+        "C0079",
+        "C0183",
+        "C0087",
+        "C0397"
+      ],
+      "objective": 30.827788999999996,
+      "cost": 13.0,
+      "capacity": 12.0
+    },
+    {
+      "ids": [
+        "C0081",
+        "C0031",
+        "C0079",
+        "C0378",
+        "C0170",
+        "C0397"
+      ],
+      "objective": 30.794494999999998,
+      "cost": 14.0,
+      "capacity": 10.0
+    },
+    {
+      "ids": [
+        "C0081",
+        "C0031",
+        "C0079",
+        "C0318",
+        "C0087",
+        "C0397"
+      ],
+      "objective": 30.696139000000002,
+      "cost": 14.0,
+      "capacity": 12.0
+    },
+    {
+      "ids": [
+        "C0081",
+        "C0031",
+        "C0079",
+        "C0183",
+        "C0170",
+        "C0087"
+      ],
+      "objective": 29.874208999999997,
+      "cost": 13.0,
+      "capacity": 10.0
+    },
+    {
+      "ids": [
+        "C0081",
+        "C0031",
+        "C0079",
+        "C0378",
+        "C0087",
+        "C0397"
+      ],
+      "objective": 29.753351000000002,
+      "cost": 14.0,
+      "capacity": 10.0
+    },
+    {
+      "ids": [
+        "C0081",
+        "C0031",
+        "C0079",
+        "C0170",
+        "C0318",
+        "C0087"
+      ],
+      "objective": 29.742559,
+      "cost": 14.0,
+      "capacity": 10.0
+    },
+    {
+      "ids": [
+        "C0081",
+        "C0031",
+        "C0079",
+        "C0183",
+        "C0318",
+        "C0397"
+      ],
+      "objective": 29.561822999999997,
+      "cost": 15.0,
+      "capacity": 14.0
+    }
+  ],
+  "angle_convention": "circuit uses gamma_circuit = gamma / energy_scale on the un-normalised Ising H; RZ(2 gamma h_i), RZZ(2 gamma J_ij), RX(2 beta), XXPlusYY(2 beta)",
+  "bit_order": "Qiskit little-endian: rightmost bitstring character = qubit 0 = Stage-1 rank 1 candidate"
+}

@@ -1,0 +1,93 @@
+{
+  "chosen_model": "lr_compact",
+  "id_mapping": "customer_id provided in Stage1_Test (updated organiser release); validated against Stage2_Data",
+  "components": {
+    "lr_compact": {
+      "best_params": {
+        "k": 6,
+        "C": 0.1
+      },
+      "inner_cv_logloss": {
+        "{'k': 4, 'C': 0.1}": 0.33028458356113605,
+        "{'k': 4, 'C': 0.3}": 0.33325420559953084,
+        "{'k': 4, 'C': 1.0}": 0.3377016922703131,
+        "{'k': 6, 'C': 0.1}": 0.32524765488922136,
+        "{'k': 6, 'C': 0.3}": 0.3268649979687617,
+        "{'k': 6, 'C': 1.0}": 0.330519965874313,
+        "{'k': 8, 'C': 0.1}": 0.328422738879636,
+        "{'k': 8, 'C': 0.3}": 0.3314186636502682,
+        "{'k': 8, 'C': 1.0}": 0.33610292280815895
+      },
+      "selected_features": [
+        "age",
+        "bal_slog",
+        "day",
+        "pout_success",
+        "pout_failure",
+        "month_is_mode"
+      ],
+      "coefficients": {
+        "age": -0.024334534390491047,
+        "bal_slog": 0.2680921093125931,
+        "day": -0.24315004174699084,
+        "pout_success": 0.3787700744335479,
+        "pout_failure": -0.19575317301866793,
+        "month_is_mode": -0.3965836546631326
+      }
+    }
+  },
+  "top10": [
+    {
+      "customer_id": "C0081",
+      "predicted_probability": 0.658661975679468,
+      "rank": 1
+    },
+    {
+      "customer_id": "C0031",
+      "predicted_probability": 0.6524667683129506,
+      "rank": 2
+    },
+    {
+      "customer_id": "C0079",
+      "predicted_probability": 0.5428568100167444,
+      "rank": 3
+    },
+    {
+      "customer_id": "C0183",
+      "predicted_probability": 0.2108700031809366,
+      "rank": 4
+    },
+    {
+      "customer_id": "C0378",
+      "predicted_probability": 0.20555325359141388,
+      "rank": 5
+    },
+    {
+      "customer_id": "C0170",
+      "predicted_probability": 0.1876195643032922,
+      "rank": 6
+    },
+    {
+      "customer_id": "C0318",
+      "predicted_probability": 0.18192969851207952,
+      "rank": 7
+    },
+    {
+      "customer_id": "C0087",
+      "predicted_probability": 0.17147166568495037,
+      "rank": 8
+    },
+    {
+      "customer_id": "C0128",
+      "predicted_probability": 0.17133809707427394,
+      "rank": 9
+    },
+    {
+      "customer_id": "C0397",
+      "predicted_probability": 0.16937407713498623,
+      "rank": 10
+    }
+  ],
+  "expected_hits_in_top10": 3.1521419134910955,
+  "mean_test_probability": 0.11212674476389427
+}

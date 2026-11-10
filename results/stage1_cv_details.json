@@ -1,0 +1,852 @@
+{
+ "chosen_model": "lr_compact",
+ "selection_rule": "min mean log_loss over ['lr_compact', 'rf', 'rbf_klr', 'qk_klr', 'vqc', 'hybrid_ensemble']; ties within 1.0 SE -> simplest (['lr_compact', 'rf', 'rbf_klr', 'qk_klr', 'vqc', 'hybrid_ensemble'])",
+ "selection": {
+  "lowest_log_loss": "lr_compact",
+  "standard_error": 0.001674544145006737,
+  "tied_within_1se": [
+   "lr_compact",
+   "hybrid_ensemble"
+  ],
+  "chosen_simplest_of_tied": "lr_compact"
+ },
+ "outer": "5-fold x 5 repeats",
+ "inner": "5-fold",
+ "wall_seconds": 675.1234142780304,
+ "fold_params": [
+  {
+   "fold": 0,
+   "repeat": 0,
+   "prior": {},
+   "lr_onehot": {
+    "C": 0.03
+   },
+   "lr_compact": {
+    "k": 8,
+    "C": 0.1
+   },
+   "rf": {
+    "min_samples_leaf": 5
+   },
+   "rbf_klr": {
+    "gamma": 0.45,
+    "C": 3.0
+   },
+   "qk_klr": {
+    "gamma": 0.45,
+    "C": 3.0
+   },
+   "vqc": {
+    "l2": 0.1
+   },
+   "hybrid_ensemble": {
+    "members": [
+     "lr_compact",
+     "qk_klr",
+     "vqc"
+    ]
+   }
+  },
+  {
+   "fold": 1,
+   "repeat": 0,
+   "prior": {},
+   "lr_onehot": {
+    "C": 0.03
+   },
+   "lr_compact": {
+    "k": 4,
+    "C": 0.1
+   },
+   "rf": {
+    "min_samples_leaf": 5
+   },
+   "rbf_klr": {
+    "gamma": 0.15,
+    "C": 3.0
+   },
+   "qk_klr": {
+    "gamma": 0.45,
+    "C": 10.0
+   },
+   "vqc": {
+    "l2": 0.1
+   },
+   "hybrid_ensemble": {
+    "members": [
+     "lr_compact",
+     "qk_klr",
+     "vqc"
+    ]
+   }
+  },
+  {
+   "fold": 2,
+   "repeat": 0,
+   "prior": {},
+   "lr_onehot": {
+    "C": 0.03
+   },
+   "lr_compact": {
+    "k": 6,
+    "C": 0.3
+   },
+   "rf": {
+    "min_samples_leaf": 5
+   },
+   "rbf_klr": {
+    "gamma": 0.15,
+    "C": 10.0
+   },
+   "qk_klr": {
+    "gamma": 0.15,
+    "C": 10.0
+   },
+   "vqc": {
+    "l2": 0.03
+   },
+   "hybrid_ensemble": {
+    "members": [
+     "lr_compact",
+     "qk_klr",
+     "vqc"
+    ]
+   }
+  },
+  {
+   "fold": 3,
+   "repeat": 0,
+   "prior": {},
+   "lr_onehot": {
+    "C": 0.03
+   },
+   "lr_compact": {
+    "k": 6,
+    "C": 0.1
+   },
+   "rf": {
+    "min_samples_leaf": 5
+   },
+   "rbf_klr": {
+    "gamma": 0.45,
+    "C": 3.0
+   },
+   "qk_klr": {
+    "gamma": 0.45,
+    "C": 10.0
+   },
+   "vqc": {
+    "l2": 0.03
+   },
+   "hybrid_ensemble": {
+    "members": [
+     "lr_compact",
+     "qk_klr",
+     "vqc"
+    ]
+   }
+  },
+  {
+   "fold": 4,
+   "repeat": 0,
+   "prior": {},
+   "lr_onehot": {
+    "C": 0.03
+   },
+   "lr_compact": {
+    "k": 4,
+    "C": 0.1
+   },
+   "rf": {
+    "min_samples_leaf": 5
+   },
+   "rbf_klr": {
+    "gamma": 0.3,
+    "C": 3.0
+   },
+   "qk_klr": {
+    "gamma": 0.45,
+    "C": 3.0
+   },
+   "vqc": {
+    "l2": 0.03
+   },
+   "hybrid_ensemble": {
+    "members": [
+     "lr_compact",
+     "qk_klr",
+     "vqc"
+    ]
+   }
+  },
+  {
+   "fold": 5,
+   "repeat": 1,
+   "prior": {},
+   "lr_onehot": {
+    "C": 0.1
+   },
+   "lr_compact": {
+    "k": 6,
+    "C": 0.1
+   },
+   "rf": {
+    "min_samples_leaf": 5
+   },
+   "rbf_klr": {
+    "gamma": 0.3,
+    "C": 3.0
+   },
+   "qk_klr": {
+    "gamma": 0.45,
+    "C": 10.0
+   },
+   "vqc": {
+    "l2": 0.03
+   },
+   "hybrid_ensemble": {
+    "members": [
+     "lr_compact",
+     "qk_klr",
+     "vqc"
+    ]
+   }
+  },
+  {
+   "fold": 6,
+   "repeat": 1,
+   "prior": {},
+   "lr_onehot": {
+    "C": 0.03
+   },
+   "lr_compact": {
+    "k": 4,
+    "C": 0.1
+   },
+   "rf": {
+    "min_samples_leaf": 5
+   },
+   "rbf_klr": {
+    "gamma": 0.45,
+    "C": 1.0
+   },
+   "qk_klr": {
+    "gamma": 0.15,
+    "C": 3.0
+   },
+   "vqc": {
+    "l2": 0.1
+   },
+   "hybrid_ensemble": {
+    "members": [
+     "lr_compact",
+     "qk_klr",
+     "vqc"
+    ]
+   }
+  },
+  {
+   "fold": 7,
+   "repeat": 1,
+   "prior": {},
+   "lr_onehot": {
+    "C": 0.1
+   },
+   "lr_compact": {
+    "k": 4,
+    "C": 0.1
+   },
+   "rf": {
+    "min_samples_leaf": 5
+   },
+   "rbf_klr": {
+    "gamma": 0.3,
+    "C": 3.0
+   },
+   "qk_klr": {
+    "gamma": 0.45,
+    "C": 10.0
+   },
+   "vqc": {
+    "l2": 0.1
+   },
+   "hybrid_ensemble": {
+    "members": [
+     "lr_compact",
+     "qk_klr",
+     "vqc"
+    ]
+   }
+  },
+  {
+   "fold": 8,
+   "repeat": 1,
+   "prior": {},
+   "lr_onehot": {
+    "C": 0.03
+   },
+   "lr_compact": {
+    "k": 4,
+    "C": 0.1
+   },
+   "rf": {
+    "min_samples_leaf": 5
+   },
+   "rbf_klr": {
+    "gamma": 0.15,
+    "C": 3.0
+   },
+   "qk_klr": {
+    "gamma": 0.15,
+    "C": 3.0
+   },
+   "vqc": {
+    "l2": 0.03
+   },
+   "hybrid_ensemble": {
+    "members": [
+     "lr_compact",
+     "qk_klr",
+     "vqc"
+    ]
+   }
+  },
+  {
+   "fold": 9,
+   "repeat": 1,
+   "prior": {},
+   "lr_onehot": {
+    "C": 0.03
+   },
+   "lr_compact": {
+    "k": 4,
+    "C": 0.1
+   },
+   "rf": {
+    "min_samples_leaf": 5
+   },
+   "rbf_klr": {
+    "gamma": 0.15,
+    "C": 10.0
+   },
+   "qk_klr": {
+    "gamma": 0.45,
+    "C": 10.0
+   },
+   "vqc": {
+    "l2": 0.03
+   },
+   "hybrid_ensemble": {
+    "members": [
+     "lr_compact",
+     "qk_klr",
+     "vqc"
+    ]
+   }
+  },
+  {
+   "fold": 10,
+   "repeat": 2,
+   "prior": {},
+   "lr_onehot": {
+    "C": 0.1
+   },
+   "lr_compact": {
+    "k": 4,
+    "C": 0.1
+   },
+   "rf": {
+    "min_samples_leaf": 5
+   },
+   "rbf_klr": {
+    "gamma": 0.15,
+    "C": 3.0
+   },
+   "qk_klr": {
+    "gamma": 0.15,
+    "C": 3.0
+   },
+   "vqc": {
+    "l2": 0.1
+   },
+   "hybrid_ensemble": {
+    "members": [
+     "lr_compact",
+     "qk_klr",
+     "vqc"
+    ]
+   }
+  },
+  {
+   "fold": 11,
+   "repeat": 2,
+   "prior": {},
+   "lr_onehot": {
+    "C": 0.03
+   },
+   "lr_compact": {
+    "k": 4,
+    "C": 0.1
+   },
+   "rf": {
+    "min_samples_leaf": 5
+   },
+   "rbf_klr": {
+    "gamma": 0.15,
+    "C": 10.0
+   },
+   "qk_klr": {
+    "gamma": 0.3,
+    "C": 3.0
+   },
+   "vqc": {
+    "l2": 0.03
+   },
+   "hybrid_ensemble": {
+    "members": [
+     "lr_compact",
+     "qk_klr",
+     "vqc"
+    ]
+   }
+  },
+  {
+   "fold": 12,
+   "repeat": 2,
+   "prior": {},
+   "lr_onehot": {
+    "C": 0.03
+   },
+   "lr_compact": {
+    "k": 4,
+    "C": 0.1
+   },
+   "rf": {
+    "min_samples_leaf": 5
+   },
+   "rbf_klr": {
+    "gamma": 0.3,
+    "C": 3.0
+   },
+   "qk_klr": {
+    "gamma": 0.15,
+    "C": 10.0
+   },
+   "vqc": {
+    "l2": 0.1
+   },
+   "hybrid_ensemble": {
+    "members": [
+     "lr_compact",
+     "qk_klr",
+     "vqc"
+    ]
+   }
+  },
+  {
+   "fold": 13,
+   "repeat": 2,
+   "prior": {},
+   "lr_onehot": {
+    "C": 0.03
+   },
+   "lr_compact": {
+    "k": 4,
+    "C": 0.1
+   },
+   "rf": {
+    "min_samples_leaf": 5
+   },
+   "rbf_klr": {
+    "gamma": 0.45,
+    "C": 3.0
+   },
+   "qk_klr": {
+    "gamma": 0.3,
+    "C": 3.0
+   },
+   "vqc": {
+    "l2": 0.03
+   },
+   "hybrid_ensemble": {
+    "members": [
+     "lr_compact",
+     "qk_klr",
+     "vqc"
+    ]
+   }
+  },
+  {
+   "fold": 14,
+   "repeat": 2,
+   "prior": {},
+   "lr_onehot": {
+    "C": 0.03
+   },
+   "lr_compact": {
+    "k": 6,
+    "C": 0.1
+   },
+   "rf": {
+    "min_samples_leaf": 5
+   },
+   "rbf_klr": {
+    "gamma": 0.3,
+    "C": 3.0
+   },
+   "qk_klr": {
+    "gamma": 0.45,
+    "C": 3.0
+   },
+   "vqc": {
+    "l2": 0.03
+   },
+   "hybrid_ensemble": {
+    "members": [
+     "lr_compact",
+     "qk_klr",
+     "vqc"
+    ]
+   }
+  },
+  {
+   "fold": 15,
+   "repeat": 3,
+   "prior": {},
+   "lr_onehot": {
+    "C": 0.03
+   },
+   "lr_compact": {
+    "k": 4,
+    "C": 0.1
+   },
+   "rf": {
+    "min_samples_leaf": 5
+   },
+   "rbf_klr": {
+    "gamma": 0.45,
+    "C": 3.0
+   },
+   "qk_klr": {
+    "gamma": 0.45,
+    "C": 3.0
+   },
+   "vqc": {
+    "l2": 0.1
+   },
+   "hybrid_ensemble": {
+    "members": [
+     "lr_compact",
+     "qk_klr",
+     "vqc"
+    ]
+   }
+  },
+  {
+   "fold": 16,
+   "repeat": 3,
+   "prior": {},
+   "lr_onehot": {
+    "C": 0.03
+   },
+   "lr_compact": {
+    "k": 4,
+    "C": 0.1
+   },
+   "rf": {
+    "min_samples_leaf": 5
+   },
+   "rbf_klr": {
+    "gamma": 0.45,
+    "C": 3.0
+   },
+   "qk_klr": {
+    "gamma": 0.3,
+    "C": 10.0
+   },
+   "vqc": {
+    "l2": 0.03
+   },
+   "hybrid_ensemble": {
+    "members": [
+     "lr_compact",
+     "qk_klr",
+     "vqc"
+    ]
+   }
+  },
+  {
+   "fold": 17,
+   "repeat": 3,
+   "prior": {},
+   "lr_onehot": {
+    "C": 0.03
+   },
+   "lr_compact": {
+    "k": 4,
+    "C": 0.3
+   },
+   "rf": {
+    "min_samples_leaf": 5
+   },
+   "rbf_klr": {
+    "gamma": 0.15,
+    "C": 10.0
+   },
+   "qk_klr": {
+    "gamma": 0.15,
+    "C": 10.0
+   },
+   "vqc": {
+    "l2": 0.03
+   },
+   "hybrid_ensemble": {
+    "members": [
+     "lr_compact",
+     "qk_klr",
+     "vqc"
+    ]
+   }
+  },
+  {
+   "fold": 18,
+   "repeat": 3,
+   "prior": {},
+   "lr_onehot": {
+    "C": 0.03
+   },
+   "lr_compact": {
+    "k": 4,
+    "C": 0.1
+   },
+   "rf": {
+    "min_samples_leaf": 5
+   },
+   "rbf_klr": {
+    "gamma": 0.15,
+    "C": 3.0
+   },
+   "qk_klr": {
+    "gamma": 0.45,
+    "C": 3.0
+   },
+   "vqc": {
+    "l2": 0.1
+   },
+   "hybrid_ensemble": {
+    "members": [
+     "lr_compact",
+     "qk_klr",
+     "vqc"
+    ]
+   }
+  },
+  {
+   "fold": 19,
+   "repeat": 3,
+   "prior": {},
+   "lr_onehot": {
+    "C": 0.03
+   },
+   "lr_compact": {
+    "k": 4,
+    "C": 0.1
+   },
+   "rf": {
+    "min_samples_leaf": 5
+   },
+   "rbf_klr": {
+    "gamma": 0.15,
+    "C": 10.0
+   },
+   "qk_klr": {
+    "gamma": 0.15,
+    "C": 10.0
+   },
+   "vqc": {
+    "l2": 0.03
+   },
+   "hybrid_ensemble": {
+    "members": [
+     "lr_compact",
+     "qk_klr",
+     "vqc"
+    ]
+   }
+  },
+  {
+   "fold": 20,
+   "repeat": 4,
+   "prior": {},
+   "lr_onehot": {
+    "C": 0.1
+   },
+   "lr_compact": {
+    "k": 4,
+    "C": 0.1
+   },
+   "rf": {
+    "min_samples_leaf": 5
+   },
+   "rbf_klr": {
+    "gamma": 0.3,
+    "C": 10.0
+   },
+   "qk_klr": {
+    "gamma": 0.15,
+    "C": 10.0
+   },
+   "vqc": {
+    "l2": 0.03
+   },
+   "hybrid_ensemble": {
+    "members": [
+     "lr_compact",
+     "qk_klr",
+     "vqc"
+    ]
+   }
+  },
+  {
+   "fold": 21,
+   "repeat": 4,
+   "prior": {},
+   "lr_onehot": {
+    "C": 0.03
+   },
+   "lr_compact": {
+    "k": 8,
+    "C": 0.1
+   },
+   "rf": {
+    "min_samples_leaf": 5
+   },
+   "rbf_klr": {
+    "gamma": 0.15,
+    "C": 3.0
+   },
+   "qk_klr": {
+    "gamma": 0.3,
+    "C": 3.0
+   },
+   "vqc": {
+    "l2": 0.1
+   },
+   "hybrid_ensemble": {
+    "members": [
+     "lr_compact",
+     "qk_klr",
+     "vqc"
+    ]
+   }
+  },
+  {
+   "fold": 22,
+   "repeat": 4,
+   "prior": {},
+   "lr_onehot": {
+    "C": 0.03
+   },
+   "lr_compact": {
+    "k": 4,
+    "C": 0.1
+   },
+   "rf": {
+    "min_samples_leaf": 5
+   },
+   "rbf_klr": {
+    "gamma": 0.3,
+    "C": 3.0
+   },
+   "qk_klr": {
+    "gamma": 0.45,
+    "C": 10.0
+   },
+   "vqc": {
+    "l2": 0.1
+   },
+   "hybrid_ensemble": {
+    "members": [
+     "lr_compact",
+     "qk_klr",
+     "vqc"
+    ]
+   }
+  },
+  {
+   "fold": 23,
+   "repeat": 4,
+   "prior": {},
+   "lr_onehot": {
+    "C": 0.03
+   },
+   "lr_compact": {
+    "k": 6,
+    "C": 0.1
+   },
+   "rf": {
+    "min_samples_leaf": 5
+   },
+   "rbf_klr": {
+    "gamma": 0.3,
+    "C": 3.0
+   },
+   "qk_klr": {
+    "gamma": 0.15,
+    "C": 10.0
+   },
+   "vqc": {
+    "l2": 0.03
+   },
+   "hybrid_ensemble": {
+    "members": [
+     "lr_compact",
+     "qk_klr",
+     "vqc"
+    ]
+   }
+  },
+  {
+   "fold": 24,
+   "repeat": 4,
+   "prior": {},
+   "lr_onehot": {
+    "C": 0.03
+   },
+   "lr_compact": {
+    "k": 4,
+    "C": 0.1
+   },
+   "rf": {
+    "min_samples_leaf": 5
+   },
+   "rbf_klr": {
+    "gamma": 0.45,
+    "C": 3.0
+   },
+   "qk_klr": {
+    "gamma": 0.45,
+    "C": 3.0
+   },
+   "vqc": {
+    "l2": 0.03
+   },
+   "hybrid_ensemble": {
+    "members": [
+     "lr_compact",
+     "qk_klr",
+     "vqc"
+    ]
+   }
+  }
+ ],
+ "mean_fit_seconds": {
+  "prior": 3.0107498168945313e-05,
+  "lr_onehot": 0.2927248477935791,
+  "lr_compact": 0.6882429695129395,
+  "rf": 2.584629545211792,
+  "rbf_klr": 2.4755272102355956,
+  "qk_klr": 3.4819766235351564,
+  "vqc": 42.8289347076416
+ }
+}

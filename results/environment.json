@@ -1,0 +1,47 @@
+{
+  "timestamp_utc": "2026-11-10T21:28:19+00:00",
+  "python": "3.13.18",
+  "platform": "Linux-6.18.44-fc-v338-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "cpu_count": 2,
+  "packages": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0",
+    "openpyxl": "3.1.5",
+    "matplotlib": "3.11.2",
+    "qiskit": "2.6.2",
+    "qiskit-aer": "0.18.2",
+    "qiskit-ibm-runtime": "0.52.0",
+    "qiskit-machine-learning": "0.9.1"
+  },
+  "seeds": {
+    "global": 42,
+    "cv_outer": 42,
+    "cv_inner": 7,
+    "vqc_init": 42,
+    "bootstrap": 2026,
+    "qaoa_init": 42,
+    "qaoa_sampler": 1234,
+    "transpiler": 42,
+    "stage3_sampler": 5678,
+    "noise_sim": 91011,
+    "monte_carlo": 2468
+  },
+  "quick_mode": false,
+  "cv": {
+    "outer": "5x5",
+    "inner": 5
+  },
+  "shots": {
+    "qaoa": 8192,
+    "stage3": 8192
+  },
+  "monte_carlo_samples": 1000000,
+  "noisy_backends": [
+    "FakeTorino",
+    "FakeBrisbane"
+  ]
+}
