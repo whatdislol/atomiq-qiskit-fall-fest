@@ -1,0 +1,11 @@
+customer_id,contact_cost,expected_deposit_value,capacity_units,customer_segment
+C0081,4,17,1,C
+C0079,3,24,3,A
+C0031,2,13,1,D
+C0327,1,25,4,B
+C0183,2,14,3,B
+C0208,4,21,3,D
+C0374,2,25,1,D
+C0193,3,16,1,D
+C0222,2,21,1,D
+C0318,3,21,3,A

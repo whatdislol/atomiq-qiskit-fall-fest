@@ -1,0 +1,2 @@
+backend,candidate_ids,selected_ids,selected_bitstring_q9_to_q0,budget_limit,budget_used,capacity_limit,capacity_used,objective_exact,measured_best_objective,optimality_gap,shots,optimum_observed_shots,feasible_shots,most_frequent_bitstring,circuit_depth_opaque_initialize,two_qubit_rotations
+Qiskit AerSimulator (local),C0081;C0079;C0031;C0327;C0183;C0208;C0374;C0193;C0222;C0318,C0081;C0079;C0031;C0327;C0374;C0222,0101001111,25,14,22,11,43.183204088500005,43.183204088500005,0,8192,236,8192,0101101011,12,36

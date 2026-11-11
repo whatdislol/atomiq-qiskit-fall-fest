@@ -1,0 +1,88 @@
+{
+  "backend": "Qiskit AerSimulator (simulator; NOT hardware)",
+  "selected_ids_q0_to_q5": [
+    "C0081",
+    "C0079",
+    "C0031",
+    "C0327",
+    "C0374",
+    "C0222"
+  ],
+  "probabilities_q0_to_q5": [
+    0.8493520678,
+    0.7295664424,
+    0.7017450767,
+    0.2641117305,
+    0.2268685727,
+    0.1827347972
+  ],
+  "angles_radians_q0_to_q5": [
+    2.3443808601728278,
+    2.047815201817253,
+    1.9861244213922067,
+    1.0794917719270487,
+    0.992900270772427,
+    0.8833955346436264
+  ],
+  "success_condition": "Hamming weight of measured bitstring >=3",
+  "exact_probability": 0.6779514718707461,
+  "ideal_aer": {
+    "shots": 8192,
+    "success_shots": 5515,
+    "estimated_probability": 0.6732177734375,
+    "exact_probability": 0.6779514718707461,
+    "signed_error": -0.004733698433246114,
+    "absolute_error": 0.004733698433246114,
+    "approximate_95pct_shot_interval": [
+      0.6630607115207243,
+      0.6833748353542757
+    ],
+    "execution_seconds": 0.0029742500046268106
+  },
+  "noisy_aer": {
+    "shots": 8192,
+    "success_shots": 5392,
+    "estimated_probability": 0.658203125,
+    "exact_probability": 0.6779514718707461,
+    "signed_error": -0.019748346870746114,
+    "absolute_error": 0.019748346870746114,
+    "approximate_95pct_shot_interval": [
+      0.6479318321131269,
+      0.6684744178868731
+    ],
+    "execution_seconds": 0.012642541994864587
+  },
+  "noise_model": {
+    "depolarizing_error_1q": 0.001,
+    "readout_P_0to1": 0.02,
+    "readout_P_1to0": 0.03,
+    "is_device_calibrated": false
+  },
+  "original_circuit": {
+    "total_instructions": 12,
+    "depth": 2,
+    "count_ops": {
+      "ry": 6,
+      "measure": 6
+    },
+    "one_qubit": 12,
+    "two_qubit": 0,
+    "three_or_more_qubit": 0,
+    "swap_count": 0,
+    "num_qubits": 6
+  },
+  "transpiled_circuit": {
+    "total_instructions": 12,
+    "depth": 2,
+    "count_ops": {
+      "ry": 6,
+      "measure": 6
+    },
+    "one_qubit": 12,
+    "two_qubit": 0,
+    "three_or_more_qubit": 0,
+    "swap_count": 0,
+    "num_qubits": 6
+  },
+  "device_executed": false
+}

@@ -1,0 +1,85 @@
+{
+  "backend": "Qiskit AerSimulator (local simulator; NOT hardware)",
+  "method": "Dicke+XY QAOA",
+  "candidate_ids": [
+    "C0081",
+    "C0079",
+    "C0031",
+    "C0327",
+    "C0183",
+    "C0208",
+    "C0374",
+    "C0193",
+    "C0222",
+    "C0318"
+  ],
+  "selected_ids": [
+    "C0081",
+    "C0079",
+    "C0031",
+    "C0327",
+    "C0374",
+    "C0222"
+  ],
+  "selected_bitstring_q9_to_q0": "0101001111",
+  "selected_count": 6,
+  "budget_limit": 25,
+  "budget_used": 14.0,
+  "capacity_limit": 22,
+  "capacity_used": 11.0,
+  "objective_exact": 43.183204088500005,
+  "objective_measured_best": 43.183204088500005,
+  "optimality_gap_measured_best": 0.0,
+  "classical_subsets_checked": 210,
+  "feasible_subsets": 210,
+  "qaoa_p": 2,
+  "angles_gamma_beta_interleaved": [
+    0.8644973638401579,
+    1.1101127977966894,
+    0.4277927114086896,
+    0.32948773731137304
+  ],
+  "shots": 8192,
+  "optimal_bitstring_observation_count": 236,
+  "most_frequent_bitstring": "0101101011",
+  "most_frequent_count": 593,
+  "feasible_shots": 8192,
+  "statevector_expected_objective": 33.72006182266402,
+  "ideal_optimum_measurement_probability": 0.028828137923409578,
+  "original_circuit": {
+    "total_instructions": 68,
+    "depth": 12,
+    "count_ops": {
+      "rz": 20,
+      "rxx": 18,
+      "ryy": 18,
+      "measure": 10,
+      "initialize": 1,
+      "barrier": 1
+    },
+    "one_qubit": 30,
+    "two_qubit": 36,
+    "three_or_more_qubit": 2,
+    "swap_count": 0,
+    "num_qubits": 10
+  },
+  "transpiled_circuit": {
+    "total_instructions": 68,
+    "depth": 12,
+    "count_ops": {
+      "rz": 20,
+      "rxx": 18,
+      "ryy": 18,
+      "measure": 10,
+      "initialize": 1,
+      "barrier": 1
+    },
+    "one_qubit": 30,
+    "two_qubit": 36,
+    "three_or_more_qubit": 2,
+    "swap_count": 0,
+    "num_qubits": 10
+  },
+  "depth_disclaimer": "initialize is an opaque state preparation instruction; depth 12 is NOT hardware-native compiled depth",
+  "device_executed": false
+}
