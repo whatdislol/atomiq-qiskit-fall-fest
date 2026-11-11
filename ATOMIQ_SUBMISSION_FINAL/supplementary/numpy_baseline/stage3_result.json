@@ -1,0 +1,46 @@
+{
+  "model": "N17 + Friend Hybrid, fixed gamma=0.2 (provided Stage-1 predictions)",
+  "selected_customers_in_qubit_order_q0_to_q5": [
+    "C0081",
+    "C0079",
+    "C0031",
+    "C0327",
+    "C0374",
+    "C0222"
+  ],
+  "stage1_probabilities_q0_to_q5": [
+    0.849352,
+    0.729566,
+    0.701745,
+    0.264112,
+    0.226869,
+    0.182735
+  ],
+  "bitstring_convention": "bitstring q5...q0; rightmost bit corresponds to C0081",
+  "circuit": "Ry(theta_i), theta_i = 2*arcsin(sqrt(p_i)), followed by measurement; no entangling gates",
+  "assumption": "Independent customer responses conditional on fixed Stage-1 probabilities",
+  "event": "number of measured 1 bits >= 3",
+  "exact_probability": 0.6779514919470051,
+  "exact_distribution_k_0_to_6": [
+    0.0056498914507413026,
+    0.06533830378364032,
+    0.25106031281861324,
+    0.38982666702226565,
+    0.22794525763700094,
+    0.05541836476209877,
+    0.004761202525639753
+  ],
+  "backend": "numpy",
+  "shots": 8192,
+  "seed": 42,
+  "success_shots": 5582,
+  "estimated_probability": 0.681396484375,
+  "absolute_error": 0.0034449924279948974,
+  "standard_error_approx_at_exact_p": 0.005162558481265817,
+  "wilson_95_percent_interval": [
+    0.6712237667434512,
+    0.6913991579351874
+  ],
+  "circuit_info": null,
+  "measurement_is_hardware": false
+}

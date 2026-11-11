@@ -1,0 +1,5 @@
+# Install into a Python 3.11+ environment. Do not pin to the friend's NumPy 2.5.3.
+numpy>=1.26
+pandas>=2.0
+qiskit>=1.2,<3
+qiskit-aer>=0.15,<1

@@ -1,0 +1,9 @@
+metric,value
+exact_probability,0.6779514919470051
+estimated_probability,0.681396484375
+success_shots,5582
+shots,8192
+absolute_error,0.0034449924279948974
+standard_error_approx_at_exact_p,0.005162558481265817
+backend,numpy
+seed,42

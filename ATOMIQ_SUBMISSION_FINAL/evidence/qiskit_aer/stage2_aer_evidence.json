@@ -1,0 +1,99 @@
+{
+  "backend": "Qiskit AerSimulator (local simulator; NOT hardware)",
+  "algorithm": "Dicke+XY QAOA",
+  "seed": 42,
+  "shots": 8192,
+  "candidate_ids_in_q0_to_q9_order": [
+    "C0081",
+    "C0079",
+    "C0031",
+    "C0327",
+    "C0183",
+    "C0208",
+    "C0374",
+    "C0193",
+    "C0222",
+    "C0318"
+  ],
+  "optimized_angles_gamma_beta_interleaved": [
+    0.8644973638401579,
+    1.1101127977966894,
+    0.4277927114086896,
+    0.32948773731137304
+  ],
+  "depth_p": 2,
+  "classical_feasible_subsets": 210,
+  "classical_enumerated_subsets": 210,
+  "classical_exact_objective": 43.183204088500005,
+  "classical_exact_selected_ids": [
+    "C0081",
+    "C0079",
+    "C0031",
+    "C0327",
+    "C0374",
+    "C0222"
+  ],
+  "classical_exact_bitstring_q9_to_q0": "0101001111",
+  "classical_exact_cost": 14.0,
+  "classical_exact_capacity": 11.0,
+  "statevector_vs_subspace_max_probability_discrepancy": 2.5673907444456745e-16,
+  "statevector_outside_six_excitation_probability": 0.0,
+  "statevector_expected_objective": 33.72006182266402,
+  "statevector_exact_optimum_probability": 0.028828137923409578,
+  "measured_best_feasible_objective": 43.183204088500005,
+  "measured_best_feasible_bitstring_q9_to_q0": "0101001111",
+  "measured_best_selected_ids": [
+    "C0081",
+    "C0079",
+    "C0031",
+    "C0327",
+    "C0374",
+    "C0222"
+  ],
+  "measured_optimality_gap": 0.0,
+  "most_frequent_bitstring_q9_to_q0": "0101101011",
+  "most_frequent_count": 593,
+  "exact_optimum_shots": 236,
+  "observed_feasible_shots": 8192,
+  "transpilation_seconds": 0.07387179099896457,
+  "execution_seconds": 0.013444083000649698,
+  "backend_options": {
+    "method": "statevector",
+    "seed_simulator": 42
+  },
+  "original_circuit": {
+    "total_instructions": 68,
+    "depth": 12,
+    "count_ops": {
+      "rz": 20,
+      "rxx": 18,
+      "ryy": 18,
+      "measure": 10,
+      "initialize": 1,
+      "barrier": 1
+    },
+    "one_qubit": 30,
+    "two_qubit": 36,
+    "three_or_more_qubit": 2,
+    "swap_count": 0,
+    "num_qubits": 10
+  },
+  "transpiled_circuit": {
+    "total_instructions": 68,
+    "depth": 12,
+    "count_ops": {
+      "rz": 20,
+      "rxx": 18,
+      "ryy": 18,
+      "measure": 10,
+      "initialize": 1,
+      "barrier": 1
+    },
+    "one_qubit": 30,
+    "two_qubit": 36,
+    "three_or_more_qubit": 2,
+    "swap_count": 0,
+    "num_qubits": 10
+  },
+  "bitstring_convention": "q9...q0; rightmost is first customer"
+}

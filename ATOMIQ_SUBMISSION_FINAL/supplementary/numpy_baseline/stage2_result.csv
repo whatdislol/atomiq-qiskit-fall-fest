@@ -1,0 +1,2 @@
+model,candidate_ids,selected_ids,budget_limit,budget_used,capacity_limit,capacity_used,objective_exact,best_observed_bitstring,best_observed_value,optimality_gap,depth_p,simulated_shots,observed_optimum_shots,quantum_backend
+N17 + Friend Hybrid gamma=0.2,C0081;C0079;C0031;C0327;C0183;C0208;C0374;C0193;C0222;C0318,C0081;C0079;C0031;C0327;C0374;C0222,25,14.0,22,11.0,43.183213,0101001111,43.183213,0.0,2,8192,242,Custom NumPy statevector simulation (not Qiskit Aer/hardware)

@@ -1,0 +1,70 @@
+{
+  "candidate_ids": [
+    "C0081",
+    "C0079",
+    "C0031",
+    "C0327",
+    "C0183",
+    "C0208",
+    "C0374",
+    "C0193",
+    "C0222",
+    "C0318"
+  ],
+  "selected_ids_exact": [
+    "C0081",
+    "C0079",
+    "C0031",
+    "C0327",
+    "C0374",
+    "C0222"
+  ],
+  "selected_bitstring_q9_to_q0": "0101001111",
+  "objective_exact": 43.183213,
+  "budget_limit": 25,
+  "budget_used": 14.0,
+  "capacity_limit": 22,
+  "capacity_used": 11.0,
+  "subsets_tested": 210,
+  "feasible_subsets": 210,
+  "max_cost_over_six": 19.0,
+  "max_capacity_over_six": 17.0,
+  "qubit_order": "q0 is first row of candidates and rightmost bit of printed bitstring",
+  "qaoa_numerical_simulation": {
+    "algorithm": "Dicke-initialized cardinality-preserving XY-QAOA",
+    "simulator": "custom NumPy 210-dimensional exact subspace emulator; shots sampled classically (NOT hardware shots)",
+    "depth_p": 2,
+    "restarts": 5,
+    "maxiter_per_restart": 400,
+    "seed": 42,
+    "shots": 8192,
+    "optimized_parameters_gamma_beta_interleaved": [
+      0.8644973638401579,
+      1.1101127977966894,
+      0.4277927114086896,
+      0.32948773731137304
+    ],
+    "optimizer_nfev_best_restart": 152,
+    "expected_objective_under_qaoa_distribution": 33.72006665946626,
+    "exact_optimum_probability_ideal": 0.02882817785318697,
+    "observed_exact_optimum_shots": 242,
+    "best_observed_bitstring_q9_to_q0": "0101001111",
+    "best_observed_selected_ids": [
+      "C0081",
+      "C0079",
+      "C0031",
+      "C0327",
+      "C0374",
+      "C0222"
+    ],
+    "best_observed_objective": 43.183213,
+    "best_observed_cost": 14.0,
+    "best_observed_capacity": 11.0,
+    "optimality_gap_best_observed": 0.0,
+    "probability_mass_feasible": 1.0000000000000002,
+    "number_of_distinct_bitstrings_observed": 191,
+    "number_of_qaoa_rz_gates_excluding_state_preparation": 20,
+    "number_of_qaoa_two_qubit_rotations_excluding_state_preparation": 36,
+    "transpiled_depth_and_gate_counts": "not available without Qiskit transpiler and chosen backend; Dicke preparation excluded"
+  }
+}

@@ -1,0 +1,6 @@
+ALL CROSS-STAGE CHECKS PASSED
+Stage 1: 100 unique rows, 10 selected, sorted by submitted probability.
+Stage 2: ['C0081', 'C0079', 'C0031', 'C0327', 'C0374', 'C0222']; cost 14.0/25; capacity 11.0/22; net value 43.183213.
+Stage 2 numerical QAOA optimality gap: 0.0.
+Stage 3 exact P(>=3): 0.677951491947; numerical shots: 5582/8192.
+WARNING: Stage2 and Stage3 shot counts are NUMERICAL SIMULATION ONLY, not Qiskit Aer/hardware runs.
