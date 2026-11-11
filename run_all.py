@@ -17,6 +17,8 @@ import sys
 import time
 import warnings
 from pathlib import Path
+from src.qcampaign import config, utils, data as data_mod, figures
+from src.qcampaign.pipeline import run_stage1, run_stage2, run_stage3, export_results, run_uncertainty
 
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "src"))
@@ -33,8 +35,6 @@ def main():
     ap.add_argument("--jobs", type=int, default=2)
     args = ap.parse_args()
 
-    from qcampaign import config, utils
-    from qcampaign import data as data_mod
 
     if args.quick:  # never overwrite the submitted results with smoke-test output
         config.RESULTS = config.ROOT / "results_quick"
@@ -49,19 +49,13 @@ def main():
     t0 = time.time()
 
     if 1 in args.stages:
-        from qcampaign.pipeline import run_stage1
         run_stage1(d, quick=args.quick, n_jobs=args.jobs)
     if 2 in args.stages:
-        from qcampaign.pipeline import run_stage2
         run_stage2(d, quick=args.quick)
     if 3 in args.stages:
-        from qcampaign.pipeline import run_stage3
         run_stage3(d, quick=args.quick)
     if 4 in args.stages:
-        from qcampaign.pipeline import run_uncertainty
         run_uncertainty(d, quick=args.quick, n_jobs=args.jobs)
-    from qcampaign.pipeline import export_results
-    from qcampaign import figures
     try:
         export_results(d, root=config.RESULTS if args.quick else config.ROOT)
         figures.all_figures()
